@@ -1,0 +1,1853 @@
+Mortgage Amortization Schedule
+Created:1/23/2021 11:37:57 AM
+------------------------------------------------
+Period No:1
+Date:1/1/2015 12:00:00 AM
+Remaining Balance:$107,640.00
+Principal Paid:$161.12
+Interest Paid:$339.51
+Fixed Payment:$500.64
+Total Interest Paid:$339.51
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:2
+Date:2/1/2015 12:00:00 AM
+Remaining Balance:$107,478.88
+Principal Paid:$161.63
+Interest Paid:$339.01
+Fixed Payment:$500.64
+Total Interest Paid:$678.52
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:3
+Date:3/1/2015 12:00:00 AM
+Remaining Balance:$107,317.25
+Principal Paid:$162.14
+Interest Paid:$338.50
+Fixed Payment:$500.64
+Total Interest Paid:$1,017.02
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:4
+Date:4/1/2015 12:00:00 AM
+Remaining Balance:$107,155.10
+Principal Paid:$162.65
+Interest Paid:$337.99
+Fixed Payment:$500.64
+Total Interest Paid:$1,355.00
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:5
+Date:5/1/2015 12:00:00 AM
+Remaining Balance:$106,992.45
+Principal Paid:$163.17
+Interest Paid:$337.47
+Fixed Payment:$500.64
+Total Interest Paid:$1,692.47
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:6
+Date:6/1/2015 12:00:00 AM
+Remaining Balance:$106,829.29
+Principal Paid:$163.68
+Interest Paid:$336.96
+Fixed Payment:$500.64
+Total Interest Paid:$2,029.43
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:7
+Date:7/1/2015 12:00:00 AM
+Remaining Balance:$106,665.60
+Principal Paid:$164.20
+Interest Paid:$336.44
+Fixed Payment:$500.64
+Total Interest Paid:$2,365.87
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:8
+Date:8/1/2015 12:00:00 AM
+Remaining Balance:$106,501.41
+Principal Paid:$164.71
+Interest Paid:$335.92
+Fixed Payment:$500.64
+Total Interest Paid:$2,701.80
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:9
+Date:9/1/2015 12:00:00 AM
+Remaining Balance:$106,336.69
+Principal Paid:$165.23
+Interest Paid:$335.40
+Fixed Payment:$500.64
+Total Interest Paid:$3,037.20
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:10
+Date:10/1/2015 12:00:00 AM
+Remaining Balance:$106,171.46
+Principal Paid:$165.76
+Interest Paid:$334.88
+Fixed Payment:$500.64
+Total Interest Paid:$3,372.08
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:11
+Date:11/1/2015 12:00:00 AM
+Remaining Balance:$106,005.70
+Principal Paid:$166.28
+Interest Paid:$334.36
+Fixed Payment:$500.64
+Total Interest Paid:$3,706.44
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:12
+Date:12/1/2015 12:00:00 AM
+Remaining Balance:$105,839.43
+Principal Paid:$166.80
+Interest Paid:$333.84
+Fixed Payment:$500.64
+Total Interest Paid:$4,040.28
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:13
+Date:1/1/2016 12:00:00 AM
+Remaining Balance:$105,672.62
+Principal Paid:$167.33
+Interest Paid:$333.31
+Fixed Payment:$500.64
+Total Interest Paid:$4,373.59
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:14
+Date:2/1/2016 12:00:00 AM
+Remaining Balance:$105,505.29
+Principal Paid:$167.86
+Interest Paid:$332.78
+Fixed Payment:$500.64
+Total Interest Paid:$4,706.37
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:15
+Date:3/1/2016 12:00:00 AM
+Remaining Balance:$105,337.44
+Principal Paid:$168.39
+Interest Paid:$332.25
+Fixed Payment:$500.64
+Total Interest Paid:$5,038.62
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:16
+Date:4/1/2016 12:00:00 AM
+Remaining Balance:$105,169.05
+Principal Paid:$168.92
+Interest Paid:$331.72
+Fixed Payment:$500.64
+Total Interest Paid:$5,370.34
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:17
+Date:5/1/2016 12:00:00 AM
+Remaining Balance:$105,000.14
+Principal Paid:$169.45
+Interest Paid:$331.19
+Fixed Payment:$500.64
+Total Interest Paid:$5,701.53
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:18
+Date:6/1/2016 12:00:00 AM
+Remaining Balance:$104,830.69
+Principal Paid:$169.98
+Interest Paid:$330.65
+Fixed Payment:$500.64
+Total Interest Paid:$6,032.18
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:19
+Date:7/1/2016 12:00:00 AM
+Remaining Balance:$104,660.70
+Principal Paid:$170.52
+Interest Paid:$330.12
+Fixed Payment:$500.64
+Total Interest Paid:$6,362.30
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:20
+Date:8/1/2016 12:00:00 AM
+Remaining Balance:$104,490.18
+Principal Paid:$171.06
+Interest Paid:$329.58
+Fixed Payment:$500.64
+Total Interest Paid:$6,691.88
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:21
+Date:9/1/2016 12:00:00 AM
+Remaining Balance:$104,319.12
+Principal Paid:$171.60
+Interest Paid:$329.04
+Fixed Payment:$500.64
+Total Interest Paid:$7,020.92
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:22
+Date:10/1/2016 12:00:00 AM
+Remaining Balance:$104,147.52
+Principal Paid:$172.14
+Interest Paid:$328.50
+Fixed Payment:$500.64
+Total Interest Paid:$7,349.42
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:23
+Date:11/1/2016 12:00:00 AM
+Remaining Balance:$103,975.38
+Principal Paid:$172.68
+Interest Paid:$327.96
+Fixed Payment:$500.64
+Total Interest Paid:$7,677.37
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:24
+Date:12/1/2016 12:00:00 AM
+Remaining Balance:$103,802.70
+Principal Paid:$173.23
+Interest Paid:$327.41
+Fixed Payment:$500.64
+Total Interest Paid:$8,004.78
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:25
+Date:1/1/2017 12:00:00 AM
+Remaining Balance:$103,629.48
+Principal Paid:$173.77
+Interest Paid:$326.86
+Fixed Payment:$500.64
+Total Interest Paid:$8,331.65
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:26
+Date:2/1/2017 12:00:00 AM
+Remaining Balance:$103,455.70
+Principal Paid:$174.32
+Interest Paid:$326.32
+Fixed Payment:$500.64
+Total Interest Paid:$8,657.96
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:27
+Date:3/1/2017 12:00:00 AM
+Remaining Balance:$103,281.38
+Principal Paid:$174.87
+Interest Paid:$325.77
+Fixed Payment:$500.64
+Total Interest Paid:$8,983.73
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:28
+Date:4/1/2017 12:00:00 AM
+Remaining Balance:$103,106.51
+Principal Paid:$175.42
+Interest Paid:$325.22
+Fixed Payment:$500.64
+Total Interest Paid:$9,308.95
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:29
+Date:5/1/2017 12:00:00 AM
+Remaining Balance:$102,931.09
+Principal Paid:$175.98
+Interest Paid:$324.66
+Fixed Payment:$500.64
+Total Interest Paid:$9,633.61
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:30
+Date:6/1/2017 12:00:00 AM
+Remaining Balance:$102,755.11
+Principal Paid:$176.53
+Interest Paid:$324.11
+Fixed Payment:$500.64
+Total Interest Paid:$9,957.71
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:31
+Date:7/1/2017 12:00:00 AM
+Remaining Balance:$102,578.58
+Principal Paid:$177.09
+Interest Paid:$323.55
+Fixed Payment:$500.64
+Total Interest Paid:$10,281.26
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:32
+Date:8/1/2017 12:00:00 AM
+Remaining Balance:$102,401.49
+Principal Paid:$177.65
+Interest Paid:$322.99
+Fixed Payment:$500.64
+Total Interest Paid:$10,604.26
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:33
+Date:9/1/2017 12:00:00 AM
+Remaining Balance:$102,223.85
+Principal Paid:$178.21
+Interest Paid:$322.43
+Fixed Payment:$500.64
+Total Interest Paid:$10,926.69
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:34
+Date:10/1/2017 12:00:00 AM
+Remaining Balance:$102,045.64
+Principal Paid:$178.77
+Interest Paid:$321.87
+Fixed Payment:$500.64
+Total Interest Paid:$11,248.56
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:35
+Date:11/1/2017 12:00:00 AM
+Remaining Balance:$101,866.87
+Principal Paid:$179.33
+Interest Paid:$321.31
+Fixed Payment:$500.64
+Total Interest Paid:$11,569.86
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:36
+Date:12/1/2017 12:00:00 AM
+Remaining Balance:$101,687.54
+Principal Paid:$179.90
+Interest Paid:$320.74
+Fixed Payment:$500.64
+Total Interest Paid:$11,890.60
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:37
+Date:1/1/2018 12:00:00 AM
+Remaining Balance:$101,507.64
+Principal Paid:$180.47
+Interest Paid:$320.17
+Fixed Payment:$500.64
+Total Interest Paid:$12,210.77
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:38
+Date:2/1/2018 12:00:00 AM
+Remaining Balance:$101,327.17
+Principal Paid:$181.04
+Interest Paid:$319.60
+Fixed Payment:$500.64
+Total Interest Paid:$12,530.38
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:39
+Date:3/1/2018 12:00:00 AM
+Remaining Balance:$101,146.14
+Principal Paid:$181.61
+Interest Paid:$319.03
+Fixed Payment:$500.64
+Total Interest Paid:$12,849.41
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:40
+Date:4/1/2018 12:00:00 AM
+Remaining Balance:$100,964.53
+Principal Paid:$182.18
+Interest Paid:$318.46
+Fixed Payment:$500.64
+Total Interest Paid:$13,167.87
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:41
+Date:5/1/2018 12:00:00 AM
+Remaining Balance:$100,782.35
+Principal Paid:$182.75
+Interest Paid:$317.88
+Fixed Payment:$500.64
+Total Interest Paid:$13,485.75
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:42
+Date:6/1/2018 12:00:00 AM
+Remaining Balance:$100,599.60
+Principal Paid:$183.33
+Interest Paid:$317.31
+Fixed Payment:$500.64
+Total Interest Paid:$13,803.06
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:43
+Date:7/1/2018 12:00:00 AM
+Remaining Balance:$100,416.27
+Principal Paid:$183.91
+Interest Paid:$316.73
+Fixed Payment:$500.64
+Total Interest Paid:$14,119.79
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:44
+Date:8/1/2018 12:00:00 AM
+Remaining Balance:$100,232.36
+Principal Paid:$184.49
+Interest Paid:$316.15
+Fixed Payment:$500.64
+Total Interest Paid:$14,435.94
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:45
+Date:9/1/2018 12:00:00 AM
+Remaining Balance:$100,047.87
+Principal Paid:$185.07
+Interest Paid:$315.57
+Fixed Payment:$500.64
+Total Interest Paid:$14,751.51
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:46
+Date:10/1/2018 12:00:00 AM
+Remaining Balance:$99,862.80
+Principal Paid:$185.65
+Interest Paid:$314.98
+Fixed Payment:$500.64
+Total Interest Paid:$15,066.49
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:47
+Date:11/1/2018 12:00:00 AM
+Remaining Balance:$99,677.15
+Principal Paid:$186.24
+Interest Paid:$314.40
+Fixed Payment:$500.64
+Total Interest Paid:$15,380.89
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:48
+Date:12/1/2018 12:00:00 AM
+Remaining Balance:$99,490.91
+Principal Paid:$186.83
+Interest Paid:$313.81
+Fixed Payment:$500.64
+Total Interest Paid:$15,694.70
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:49
+Date:1/1/2019 12:00:00 AM
+Remaining Balance:$99,304.08
+Principal Paid:$187.42
+Interest Paid:$313.22
+Fixed Payment:$500.64
+Total Interest Paid:$16,007.92
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:50
+Date:2/1/2019 12:00:00 AM
+Remaining Balance:$99,116.67
+Principal Paid:$188.01
+Interest Paid:$312.63
+Fixed Payment:$500.64
+Total Interest Paid:$16,320.55
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:51
+Date:3/1/2019 12:00:00 AM
+Remaining Balance:$98,928.66
+Principal Paid:$188.60
+Interest Paid:$312.04
+Fixed Payment:$500.64
+Total Interest Paid:$16,632.59
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:52
+Date:4/1/2019 12:00:00 AM
+Remaining Balance:$98,740.06
+Principal Paid:$189.20
+Interest Paid:$311.44
+Fixed Payment:$500.64
+Total Interest Paid:$16,944.03
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:53
+Date:5/1/2019 12:00:00 AM
+Remaining Balance:$98,550.87
+Principal Paid:$189.79
+Interest Paid:$310.85
+Fixed Payment:$500.64
+Total Interest Paid:$17,254.88
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:54
+Date:6/1/2019 12:00:00 AM
+Remaining Balance:$98,361.07
+Principal Paid:$190.39
+Interest Paid:$310.25
+Fixed Payment:$500.64
+Total Interest Paid:$17,565.12
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:55
+Date:7/1/2019 12:00:00 AM
+Remaining Balance:$98,170.68
+Principal Paid:$190.99
+Interest Paid:$309.65
+Fixed Payment:$500.64
+Total Interest Paid:$17,874.77
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:56
+Date:8/1/2019 12:00:00 AM
+Remaining Balance:$97,979.69
+Principal Paid:$191.59
+Interest Paid:$309.04
+Fixed Payment:$500.64
+Total Interest Paid:$18,183.81
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:57
+Date:9/1/2019 12:00:00 AM
+Remaining Balance:$97,788.10
+Principal Paid:$192.20
+Interest Paid:$308.44
+Fixed Payment:$500.64
+Total Interest Paid:$18,492.25
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:58
+Date:10/1/2019 12:00:00 AM
+Remaining Balance:$97,595.90
+Principal Paid:$192.80
+Interest Paid:$307.83
+Fixed Payment:$500.64
+Total Interest Paid:$18,800.09
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:59
+Date:11/1/2019 12:00:00 AM
+Remaining Balance:$97,403.10
+Principal Paid:$193.41
+Interest Paid:$307.23
+Fixed Payment:$500.64
+Total Interest Paid:$19,107.31
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:60
+Date:12/1/2019 12:00:00 AM
+Remaining Balance:$97,209.68
+Principal Paid:$194.02
+Interest Paid:$306.62
+Fixed Payment:$500.64
+Total Interest Paid:$19,413.93
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:61
+Date:1/1/2020 12:00:00 AM
+Remaining Balance:$97,015.66
+Principal Paid:$194.63
+Interest Paid:$306.00
+Fixed Payment:$500.64
+Total Interest Paid:$19,719.93
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:62
+Date:2/1/2020 12:00:00 AM
+Remaining Balance:$96,821.03
+Principal Paid:$195.25
+Interest Paid:$305.39
+Fixed Payment:$500.64
+Total Interest Paid:$20,025.32
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:63
+Date:3/1/2020 12:00:00 AM
+Remaining Balance:$96,625.78
+Principal Paid:$195.86
+Interest Paid:$304.77
+Fixed Payment:$500.64
+Total Interest Paid:$20,330.10
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:64
+Date:4/1/2020 12:00:00 AM
+Remaining Balance:$96,429.92
+Principal Paid:$196.48
+Interest Paid:$304.16
+Fixed Payment:$500.64
+Total Interest Paid:$20,634.25
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:65
+Date:5/1/2020 12:00:00 AM
+Remaining Balance:$96,233.43
+Principal Paid:$197.10
+Interest Paid:$303.54
+Fixed Payment:$500.64
+Total Interest Paid:$20,937.79
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:66
+Date:6/1/2020 12:00:00 AM
+Remaining Balance:$96,036.33
+Principal Paid:$197.72
+Interest Paid:$302.91
+Fixed Payment:$500.64
+Total Interest Paid:$21,240.70
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:67
+Date:7/1/2020 12:00:00 AM
+Remaining Balance:$95,838.61
+Principal Paid:$198.35
+Interest Paid:$302.29
+Fixed Payment:$500.64
+Total Interest Paid:$21,542.99
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:68
+Date:8/1/2020 12:00:00 AM
+Remaining Balance:$95,640.26
+Principal Paid:$198.97
+Interest Paid:$301.67
+Fixed Payment:$500.64
+Total Interest Paid:$21,844.66
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:69
+Date:9/1/2020 12:00:00 AM
+Remaining Balance:$95,441.29
+Principal Paid:$199.60
+Interest Paid:$301.04
+Fixed Payment:$500.64
+Total Interest Paid:$22,145.70
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:70
+Date:10/1/2020 12:00:00 AM
+Remaining Balance:$95,241.69
+Principal Paid:$200.23
+Interest Paid:$300.41
+Fixed Payment:$500.64
+Total Interest Paid:$22,446.11
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:71
+Date:11/1/2020 12:00:00 AM
+Remaining Balance:$95,041.46
+Principal Paid:$200.86
+Interest Paid:$299.78
+Fixed Payment:$500.64
+Total Interest Paid:$22,745.88
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:72
+Date:12/1/2020 12:00:00 AM
+Remaining Balance:$94,840.60
+Principal Paid:$201.49
+Interest Paid:$299.14
+Fixed Payment:$500.64
+Total Interest Paid:$23,045.03
+Extra Payment:$0.00
+Extra Payment Cumulative:$0.00
+------------------------------------------------
+Period No:73
+Date:1/1/2021 12:00:00 AM
+Remaining Balance:$93,639.10
+Principal Paid:$205.28
+Interest Paid:$295.35
+Fixed Payment:$500.64
+Total Interest Paid:$23,340.38
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$1,000.00
+------------------------------------------------
+Period No:74
+Date:2/1/2021 12:00:00 AM
+Remaining Balance:$93,433.82
+Principal Paid:$205.93
+Interest Paid:$294.71
+Fixed Payment:$500.64
+Total Interest Paid:$23,635.08
+Extra Payment:$0.00
+Extra Payment Cumulative:$1,000.00
+------------------------------------------------
+Period No:75
+Date:3/1/2021 12:00:00 AM
+Remaining Balance:$92,227.89
+Principal Paid:$209.74
+Interest Paid:$290.90
+Fixed Payment:$500.64
+Total Interest Paid:$23,925.99
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$2,000.00
+------------------------------------------------
+Period No:76
+Date:4/1/2021 12:00:00 AM
+Remaining Balance:$92,018.15
+Principal Paid:$210.40
+Interest Paid:$290.24
+Fixed Payment:$500.64
+Total Interest Paid:$24,216.23
+Extra Payment:$0.00
+Extra Payment Cumulative:$2,000.00
+------------------------------------------------
+Period No:77
+Date:5/1/2021 12:00:00 AM
+Remaining Balance:$90,807.75
+Principal Paid:$214.22
+Interest Paid:$286.42
+Fixed Payment:$500.64
+Total Interest Paid:$24,502.65
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$3,000.00
+------------------------------------------------
+Period No:78
+Date:6/1/2021 12:00:00 AM
+Remaining Balance:$90,593.54
+Principal Paid:$214.89
+Interest Paid:$285.75
+Fixed Payment:$500.64
+Total Interest Paid:$24,788.40
+Extra Payment:$0.00
+Extra Payment Cumulative:$3,000.00
+------------------------------------------------
+Period No:79
+Date:7/1/2021 12:00:00 AM
+Remaining Balance:$89,378.65
+Principal Paid:$218.72
+Interest Paid:$281.92
+Fixed Payment:$500.64
+Total Interest Paid:$25,070.31
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$4,000.00
+------------------------------------------------
+Period No:80
+Date:8/1/2021 12:00:00 AM
+Remaining Balance:$89,159.93
+Principal Paid:$219.41
+Interest Paid:$281.23
+Fixed Payment:$500.64
+Total Interest Paid:$25,351.54
+Extra Payment:$0.00
+Extra Payment Cumulative:$4,000.00
+------------------------------------------------
+Period No:81
+Date:9/1/2021 12:00:00 AM
+Remaining Balance:$87,940.51
+Principal Paid:$223.26
+Interest Paid:$277.38
+Fixed Payment:$500.64
+Total Interest Paid:$25,628.92
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$5,000.00
+------------------------------------------------
+Period No:82
+Date:10/1/2021 12:00:00 AM
+Remaining Balance:$87,717.25
+Principal Paid:$223.96
+Interest Paid:$276.67
+Fixed Payment:$500.64
+Total Interest Paid:$25,905.59
+Extra Payment:$0.00
+Extra Payment Cumulative:$5,000.00
+------------------------------------------------
+Period No:83
+Date:11/1/2021 12:00:00 AM
+Remaining Balance:$86,493.29
+Principal Paid:$227.82
+Interest Paid:$272.81
+Fixed Payment:$500.64
+Total Interest Paid:$26,178.41
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$6,000.00
+------------------------------------------------
+Period No:84
+Date:12/1/2021 12:00:00 AM
+Remaining Balance:$86,265.47
+Principal Paid:$228.54
+Interest Paid:$272.10
+Fixed Payment:$500.64
+Total Interest Paid:$26,450.50
+Extra Payment:$0.00
+Extra Payment Cumulative:$6,000.00
+------------------------------------------------
+Period No:85
+Date:1/1/2022 12:00:00 AM
+Remaining Balance:$85,036.93
+Principal Paid:$232.42
+Interest Paid:$268.22
+Fixed Payment:$500.64
+Total Interest Paid:$26,718.72
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$7,000.00
+------------------------------------------------
+Period No:86
+Date:2/1/2022 12:00:00 AM
+Remaining Balance:$84,804.51
+Principal Paid:$233.15
+Interest Paid:$267.49
+Fixed Payment:$500.64
+Total Interest Paid:$26,986.21
+Extra Payment:$0.00
+Extra Payment Cumulative:$7,000.00
+------------------------------------------------
+Period No:87
+Date:3/1/2022 12:00:00 AM
+Remaining Balance:$83,571.36
+Principal Paid:$237.04
+Interest Paid:$263.60
+Fixed Payment:$500.64
+Total Interest Paid:$27,249.81
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$8,000.00
+------------------------------------------------
+Period No:88
+Date:4/1/2022 12:00:00 AM
+Remaining Balance:$83,334.32
+Principal Paid:$237.79
+Interest Paid:$262.85
+Fixed Payment:$500.64
+Total Interest Paid:$27,512.66
+Extra Payment:$0.00
+Extra Payment Cumulative:$8,000.00
+------------------------------------------------
+Period No:89
+Date:5/1/2022 12:00:00 AM
+Remaining Balance:$82,096.53
+Principal Paid:$241.69
+Interest Paid:$258.95
+Fixed Payment:$500.64
+Total Interest Paid:$27,771.60
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$9,000.00
+------------------------------------------------
+Period No:90
+Date:6/1/2022 12:00:00 AM
+Remaining Balance:$81,854.84
+Principal Paid:$242.45
+Interest Paid:$258.18
+Fixed Payment:$500.64
+Total Interest Paid:$28,029.79
+Extra Payment:$0.00
+Extra Payment Cumulative:$9,000.00
+------------------------------------------------
+Period No:91
+Date:7/1/2022 12:00:00 AM
+Remaining Balance:$80,612.39
+Principal Paid:$246.37
+Interest Paid:$254.26
+Fixed Payment:$500.64
+Total Interest Paid:$28,284.05
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$10,000.00
+------------------------------------------------
+Period No:92
+Date:8/1/2022 12:00:00 AM
+Remaining Balance:$80,366.01
+Principal Paid:$247.15
+Interest Paid:$253.49
+Fixed Payment:$500.64
+Total Interest Paid:$28,537.54
+Extra Payment:$0.00
+Extra Payment Cumulative:$10,000.00
+------------------------------------------------
+Period No:93
+Date:9/1/2022 12:00:00 AM
+Remaining Balance:$79,118.86
+Principal Paid:$251.08
+Interest Paid:$249.55
+Fixed Payment:$500.64
+Total Interest Paid:$28,787.09
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$11,000.00
+------------------------------------------------
+Period No:94
+Date:10/1/2022 12:00:00 AM
+Remaining Balance:$78,867.78
+Principal Paid:$251.88
+Interest Paid:$248.76
+Fixed Payment:$500.64
+Total Interest Paid:$29,035.86
+Extra Payment:$0.00
+Extra Payment Cumulative:$11,000.00
+------------------------------------------------
+Period No:95
+Date:11/1/2022 12:00:00 AM
+Remaining Balance:$77,615.90
+Principal Paid:$255.82
+Interest Paid:$244.81
+Fixed Payment:$500.64
+Total Interest Paid:$29,280.67
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$12,000.00
+------------------------------------------------
+Period No:96
+Date:12/1/2022 12:00:00 AM
+Remaining Balance:$77,360.08
+Principal Paid:$256.63
+Interest Paid:$244.01
+Fixed Payment:$500.64
+Total Interest Paid:$29,524.68
+Extra Payment:$0.00
+Extra Payment Cumulative:$12,000.00
+------------------------------------------------
+Period No:97
+Date:1/1/2023 12:00:00 AM
+Remaining Balance:$76,103.45
+Principal Paid:$260.59
+Interest Paid:$240.04
+Fixed Payment:$500.64
+Total Interest Paid:$29,764.72
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$13,000.00
+------------------------------------------------
+Period No:98
+Date:2/1/2023 12:00:00 AM
+Remaining Balance:$75,842.85
+Principal Paid:$261.42
+Interest Paid:$239.22
+Fixed Payment:$500.64
+Total Interest Paid:$30,003.94
+Extra Payment:$0.00
+Extra Payment Cumulative:$13,000.00
+------------------------------------------------
+Period No:99
+Date:3/1/2023 12:00:00 AM
+Remaining Balance:$74,581.44
+Principal Paid:$265.40
+Interest Paid:$235.24
+Fixed Payment:$500.64
+Total Interest Paid:$30,239.18
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$14,000.00
+------------------------------------------------
+Period No:100
+Date:4/1/2023 12:00:00 AM
+Remaining Balance:$74,316.04
+Principal Paid:$266.23
+Interest Paid:$234.41
+Fixed Payment:$500.64
+Total Interest Paid:$30,473.59
+Extra Payment:$0.00
+Extra Payment Cumulative:$14,000.00
+------------------------------------------------
+Period No:101
+Date:5/1/2023 12:00:00 AM
+Remaining Balance:$73,049.81
+Principal Paid:$270.23
+Interest Paid:$230.41
+Fixed Payment:$500.64
+Total Interest Paid:$30,704.00
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$15,000.00
+------------------------------------------------
+Period No:102
+Date:6/1/2023 12:00:00 AM
+Remaining Balance:$72,779.58
+Principal Paid:$271.08
+Interest Paid:$229.56
+Fixed Payment:$500.64
+Total Interest Paid:$30,933.56
+Extra Payment:$0.00
+Extra Payment Cumulative:$15,000.00
+------------------------------------------------
+Period No:103
+Date:7/1/2023 12:00:00 AM
+Remaining Balance:$71,508.50
+Principal Paid:$275.09
+Interest Paid:$225.55
+Fixed Payment:$500.64
+Total Interest Paid:$31,159.11
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$16,000.00
+------------------------------------------------
+Period No:104
+Date:8/1/2023 12:00:00 AM
+Remaining Balance:$71,233.41
+Principal Paid:$275.96
+Interest Paid:$224.68
+Fixed Payment:$500.64
+Total Interest Paid:$31,383.79
+Extra Payment:$0.00
+Extra Payment Cumulative:$16,000.00
+------------------------------------------------
+Period No:105
+Date:9/1/2023 12:00:00 AM
+Remaining Balance:$69,957.46
+Principal Paid:$279.98
+Interest Paid:$220.66
+Fixed Payment:$500.64
+Total Interest Paid:$31,604.45
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$17,000.00
+------------------------------------------------
+Period No:106
+Date:10/1/2023 12:00:00 AM
+Remaining Balance:$69,677.48
+Principal Paid:$280.86
+Interest Paid:$219.77
+Fixed Payment:$500.64
+Total Interest Paid:$31,824.22
+Extra Payment:$0.00
+Extra Payment Cumulative:$17,000.00
+------------------------------------------------
+Period No:107
+Date:11/1/2023 12:00:00 AM
+Remaining Balance:$68,396.62
+Principal Paid:$284.90
+Interest Paid:$215.73
+Fixed Payment:$500.64
+Total Interest Paid:$32,039.96
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$18,000.00
+------------------------------------------------
+Period No:108
+Date:12/1/2023 12:00:00 AM
+Remaining Balance:$68,111.71
+Principal Paid:$285.80
+Interest Paid:$214.84
+Fixed Payment:$500.64
+Total Interest Paid:$32,254.79
+Extra Payment:$0.00
+Extra Payment Cumulative:$18,000.00
+------------------------------------------------
+Period No:109
+Date:1/1/2024 12:00:00 AM
+Remaining Balance:$66,825.91
+Principal Paid:$289.86
+Interest Paid:$210.78
+Fixed Payment:$500.64
+Total Interest Paid:$32,465.57
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$19,000.00
+------------------------------------------------
+Period No:110
+Date:2/1/2024 12:00:00 AM
+Remaining Balance:$66,536.05
+Principal Paid:$290.77
+Interest Paid:$209.87
+Fixed Payment:$500.64
+Total Interest Paid:$32,675.44
+Extra Payment:$0.00
+Extra Payment Cumulative:$19,000.00
+------------------------------------------------
+Period No:111
+Date:3/1/2024 12:00:00 AM
+Remaining Balance:$65,245.28
+Principal Paid:$294.84
+Interest Paid:$205.79
+Fixed Payment:$500.64
+Total Interest Paid:$32,881.23
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$20,000.00
+------------------------------------------------
+Period No:112
+Date:4/1/2024 12:00:00 AM
+Remaining Balance:$64,950.44
+Principal Paid:$295.77
+Interest Paid:$204.86
+Fixed Payment:$500.64
+Total Interest Paid:$33,086.10
+Extra Payment:$0.00
+Extra Payment Cumulative:$20,000.00
+------------------------------------------------
+Period No:113
+Date:5/1/2024 12:00:00 AM
+Remaining Balance:$63,654.66
+Principal Paid:$299.86
+Interest Paid:$200.78
+Fixed Payment:$500.64
+Total Interest Paid:$33,286.87
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$21,000.00
+------------------------------------------------
+Period No:114
+Date:6/1/2024 12:00:00 AM
+Remaining Balance:$63,354.80
+Principal Paid:$300.81
+Interest Paid:$199.83
+Fixed Payment:$500.64
+Total Interest Paid:$33,486.71
+Extra Payment:$0.00
+Extra Payment Cumulative:$21,000.00
+------------------------------------------------
+Period No:115
+Date:7/1/2024 12:00:00 AM
+Remaining Balance:$62,054.00
+Principal Paid:$304.91
+Interest Paid:$195.73
+Fixed Payment:$500.64
+Total Interest Paid:$33,682.43
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$22,000.00
+------------------------------------------------
+Period No:116
+Date:8/1/2024 12:00:00 AM
+Remaining Balance:$61,749.09
+Principal Paid:$305.87
+Interest Paid:$194.77
+Fixed Payment:$500.64
+Total Interest Paid:$33,877.20
+Extra Payment:$0.00
+Extra Payment Cumulative:$22,000.00
+------------------------------------------------
+Period No:117
+Date:9/1/2024 12:00:00 AM
+Remaining Balance:$60,443.22
+Principal Paid:$309.99
+Interest Paid:$190.65
+Fixed Payment:$500.64
+Total Interest Paid:$34,067.85
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$23,000.00
+------------------------------------------------
+Period No:118
+Date:10/1/2024 12:00:00 AM
+Remaining Balance:$60,133.23
+Principal Paid:$310.97
+Interest Paid:$189.67
+Fixed Payment:$500.64
+Total Interest Paid:$34,257.52
+Extra Payment:$0.00
+Extra Payment Cumulative:$23,000.00
+------------------------------------------------
+Period No:119
+Date:11/1/2024 12:00:00 AM
+Remaining Balance:$58,822.26
+Principal Paid:$315.10
+Interest Paid:$185.54
+Fixed Payment:$500.64
+Total Interest Paid:$34,443.06
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$24,000.00
+------------------------------------------------
+Period No:120
+Date:12/1/2024 12:00:00 AM
+Remaining Balance:$58,507.16
+Principal Paid:$316.10
+Interest Paid:$184.54
+Fixed Payment:$500.64
+Total Interest Paid:$34,627.60
+Extra Payment:$0.00
+Extra Payment Cumulative:$24,000.00
+------------------------------------------------
+Period No:121
+Date:1/1/2025 12:00:00 AM
+Remaining Balance:$57,191.06
+Principal Paid:$320.25
+Interest Paid:$180.39
+Fixed Payment:$500.64
+Total Interest Paid:$34,807.99
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$25,000.00
+------------------------------------------------
+Period No:122
+Date:2/1/2025 12:00:00 AM
+Remaining Balance:$56,870.81
+Principal Paid:$321.26
+Interest Paid:$179.38
+Fixed Payment:$500.64
+Total Interest Paid:$34,987.37
+Extra Payment:$0.00
+Extra Payment Cumulative:$25,000.00
+------------------------------------------------
+Period No:123
+Date:3/1/2025 12:00:00 AM
+Remaining Balance:$55,549.56
+Principal Paid:$325.43
+Interest Paid:$175.21
+Fixed Payment:$500.64
+Total Interest Paid:$35,162.58
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$26,000.00
+------------------------------------------------
+Period No:124
+Date:4/1/2025 12:00:00 AM
+Remaining Balance:$55,224.13
+Principal Paid:$326.45
+Interest Paid:$174.19
+Fixed Payment:$500.64
+Total Interest Paid:$35,336.77
+Extra Payment:$0.00
+Extra Payment Cumulative:$26,000.00
+------------------------------------------------
+Period No:125
+Date:5/1/2025 12:00:00 AM
+Remaining Balance:$53,897.68
+Principal Paid:$330.64
+Interest Paid:$170.00
+Fixed Payment:$500.64
+Total Interest Paid:$35,506.77
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$27,000.00
+------------------------------------------------
+Period No:126
+Date:6/1/2025 12:00:00 AM
+Remaining Balance:$53,567.04
+Principal Paid:$331.68
+Interest Paid:$168.96
+Fixed Payment:$500.64
+Total Interest Paid:$35,675.73
+Extra Payment:$0.00
+Extra Payment Cumulative:$27,000.00
+------------------------------------------------
+Period No:127
+Date:7/1/2025 12:00:00 AM
+Remaining Balance:$52,235.36
+Principal Paid:$335.88
+Interest Paid:$164.76
+Fixed Payment:$500.64
+Total Interest Paid:$35,840.49
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$28,000.00
+------------------------------------------------
+Period No:128
+Date:8/1/2025 12:00:00 AM
+Remaining Balance:$51,899.49
+Principal Paid:$336.94
+Interest Paid:$163.70
+Fixed Payment:$500.64
+Total Interest Paid:$36,004.19
+Extra Payment:$0.00
+Extra Payment Cumulative:$28,000.00
+------------------------------------------------
+Period No:129
+Date:9/1/2025 12:00:00 AM
+Remaining Balance:$50,562.55
+Principal Paid:$341.16
+Interest Paid:$159.48
+Fixed Payment:$500.64
+Total Interest Paid:$36,163.67
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$29,000.00
+------------------------------------------------
+Period No:130
+Date:10/1/2025 12:00:00 AM
+Remaining Balance:$50,221.39
+Principal Paid:$342.23
+Interest Paid:$158.41
+Fixed Payment:$500.64
+Total Interest Paid:$36,322.07
+Extra Payment:$0.00
+Extra Payment Cumulative:$29,000.00
+------------------------------------------------
+Period No:131
+Date:11/1/2025 12:00:00 AM
+Remaining Balance:$48,879.16
+Principal Paid:$346.46
+Interest Paid:$154.17
+Fixed Payment:$500.64
+Total Interest Paid:$36,476.25
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$30,000.00
+------------------------------------------------
+Period No:132
+Date:12/1/2025 12:00:00 AM
+Remaining Balance:$48,532.70
+Principal Paid:$347.56
+Interest Paid:$153.08
+Fixed Payment:$500.64
+Total Interest Paid:$36,629.33
+Extra Payment:$0.00
+Extra Payment Cumulative:$30,000.00
+------------------------------------------------
+Period No:133
+Date:1/1/2026 12:00:00 AM
+Remaining Balance:$47,185.14
+Principal Paid:$351.81
+Interest Paid:$148.83
+Fixed Payment:$500.64
+Total Interest Paid:$36,778.16
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$31,000.00
+------------------------------------------------
+Period No:134
+Date:2/1/2026 12:00:00 AM
+Remaining Balance:$46,833.33
+Principal Paid:$352.92
+Interest Paid:$147.72
+Fixed Payment:$500.64
+Total Interest Paid:$36,925.88
+Extra Payment:$0.00
+Extra Payment Cumulative:$31,000.00
+------------------------------------------------
+Period No:135
+Date:3/1/2026 12:00:00 AM
+Remaining Balance:$45,480.41
+Principal Paid:$357.18
+Interest Paid:$143.45
+Fixed Payment:$500.64
+Total Interest Paid:$37,069.33
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$32,000.00
+------------------------------------------------
+Period No:136
+Date:4/1/2026 12:00:00 AM
+Remaining Balance:$45,123.23
+Principal Paid:$358.31
+Interest Paid:$142.33
+Fixed Payment:$500.64
+Total Interest Paid:$37,211.66
+Extra Payment:$0.00
+Extra Payment Cumulative:$32,000.00
+------------------------------------------------
+Period No:137
+Date:5/1/2026 12:00:00 AM
+Remaining Balance:$43,764.92
+Principal Paid:$362.60
+Interest Paid:$138.04
+Fixed Payment:$500.64
+Total Interest Paid:$37,349.70
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$33,000.00
+------------------------------------------------
+Period No:138
+Date:6/1/2026 12:00:00 AM
+Remaining Balance:$43,402.32
+Principal Paid:$363.74
+Interest Paid:$136.90
+Fixed Payment:$500.64
+Total Interest Paid:$37,486.60
+Extra Payment:$0.00
+Extra Payment Cumulative:$33,000.00
+------------------------------------------------
+Period No:139
+Date:7/1/2026 12:00:00 AM
+Remaining Balance:$42,038.58
+Principal Paid:$368.04
+Interest Paid:$132.60
+Fixed Payment:$500.64
+Total Interest Paid:$37,619.19
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$34,000.00
+------------------------------------------------
+Period No:140
+Date:8/1/2026 12:00:00 AM
+Remaining Balance:$41,670.54
+Principal Paid:$369.20
+Interest Paid:$131.44
+Fixed Payment:$500.64
+Total Interest Paid:$37,750.63
+Extra Payment:$0.00
+Extra Payment Cumulative:$34,000.00
+------------------------------------------------
+Period No:141
+Date:9/1/2026 12:00:00 AM
+Remaining Balance:$40,301.34
+Principal Paid:$373.52
+Interest Paid:$127.12
+Fixed Payment:$500.64
+Total Interest Paid:$37,877.75
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$35,000.00
+------------------------------------------------
+Period No:142
+Date:10/1/2026 12:00:00 AM
+Remaining Balance:$39,927.82
+Principal Paid:$374.70
+Interest Paid:$125.94
+Fixed Payment:$500.64
+Total Interest Paid:$38,003.69
+Extra Payment:$0.00
+Extra Payment Cumulative:$35,000.00
+------------------------------------------------
+Period No:143
+Date:11/1/2026 12:00:00 AM
+Remaining Balance:$38,553.12
+Principal Paid:$379.03
+Interest Paid:$121.60
+Fixed Payment:$500.64
+Total Interest Paid:$38,125.29
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$36,000.00
+------------------------------------------------
+Period No:144
+Date:12/1/2026 12:00:00 AM
+Remaining Balance:$38,174.08
+Principal Paid:$380.23
+Interest Paid:$120.41
+Fixed Payment:$500.64
+Total Interest Paid:$38,245.70
+Extra Payment:$0.00
+Extra Payment Cumulative:$36,000.00
+------------------------------------------------
+Period No:145
+Date:1/1/2027 12:00:00 AM
+Remaining Balance:$36,793.85
+Principal Paid:$384.58
+Interest Paid:$116.05
+Fixed Payment:$500.64
+Total Interest Paid:$38,361.75
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$37,000.00
+------------------------------------------------
+Period No:146
+Date:2/1/2027 12:00:00 AM
+Remaining Balance:$36,409.27
+Principal Paid:$385.80
+Interest Paid:$114.84
+Fixed Payment:$500.64
+Total Interest Paid:$38,476.59
+Extra Payment:$0.00
+Extra Payment Cumulative:$37,000.00
+------------------------------------------------
+Period No:147
+Date:3/1/2027 12:00:00 AM
+Remaining Balance:$35,023.47
+Principal Paid:$390.17
+Interest Paid:$110.47
+Fixed Payment:$500.64
+Total Interest Paid:$38,587.06
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$38,000.00
+------------------------------------------------
+Period No:148
+Date:4/1/2027 12:00:00 AM
+Remaining Balance:$34,633.30
+Principal Paid:$391.40
+Interest Paid:$109.24
+Fixed Payment:$500.64
+Total Interest Paid:$38,696.30
+Extra Payment:$0.00
+Extra Payment Cumulative:$38,000.00
+------------------------------------------------
+Period No:149
+Date:5/1/2027 12:00:00 AM
+Remaining Balance:$33,241.91
+Principal Paid:$395.79
+Interest Paid:$104.85
+Fixed Payment:$500.64
+Total Interest Paid:$38,801.15
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$39,000.00
+------------------------------------------------
+Period No:150
+Date:6/1/2027 12:00:00 AM
+Remaining Balance:$32,846.12
+Principal Paid:$397.04
+Interest Paid:$103.60
+Fixed Payment:$500.64
+Total Interest Paid:$38,904.75
+Extra Payment:$0.00
+Extra Payment Cumulative:$39,000.00
+------------------------------------------------
+Period No:151
+Date:7/1/2027 12:00:00 AM
+Remaining Balance:$31,449.08
+Principal Paid:$401.44
+Interest Paid:$99.20
+Fixed Payment:$500.64
+Total Interest Paid:$39,003.95
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$40,000.00
+------------------------------------------------
+Period No:152
+Date:8/1/2027 12:00:00 AM
+Remaining Balance:$31,047.64
+Principal Paid:$402.71
+Interest Paid:$97.93
+Fixed Payment:$500.64
+Total Interest Paid:$39,101.88
+Extra Payment:$0.00
+Extra Payment Cumulative:$40,000.00
+------------------------------------------------
+Period No:153
+Date:9/1/2027 12:00:00 AM
+Remaining Balance:$29,644.93
+Principal Paid:$407.13
+Interest Paid:$93.51
+Fixed Payment:$500.64
+Total Interest Paid:$39,195.38
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$41,000.00
+------------------------------------------------
+Period No:154
+Date:10/1/2027 12:00:00 AM
+Remaining Balance:$29,237.80
+Principal Paid:$408.42
+Interest Paid:$92.22
+Fixed Payment:$500.64
+Total Interest Paid:$39,287.60
+Extra Payment:$0.00
+Extra Payment Cumulative:$41,000.00
+------------------------------------------------
+Period No:155
+Date:11/1/2027 12:00:00 AM
+Remaining Balance:$27,829.38
+Principal Paid:$412.86
+Interest Paid:$87.78
+Fixed Payment:$500.64
+Total Interest Paid:$39,375.38
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$42,000.00
+------------------------------------------------
+Period No:156
+Date:12/1/2027 12:00:00 AM
+Remaining Balance:$27,416.52
+Principal Paid:$414.16
+Interest Paid:$86.48
+Fixed Payment:$500.64
+Total Interest Paid:$39,461.86
+Extra Payment:$0.00
+Extra Payment Cumulative:$42,000.00
+------------------------------------------------
+Period No:157
+Date:1/1/2028 12:00:00 AM
+Remaining Balance:$26,002.36
+Principal Paid:$418.62
+Interest Paid:$82.02
+Fixed Payment:$500.64
+Total Interest Paid:$39,543.87
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$43,000.00
+------------------------------------------------
+Period No:158
+Date:2/1/2028 12:00:00 AM
+Remaining Balance:$25,583.74
+Principal Paid:$419.94
+Interest Paid:$80.70
+Fixed Payment:$500.64
+Total Interest Paid:$39,624.57
+Extra Payment:$0.00
+Extra Payment Cumulative:$43,000.00
+------------------------------------------------
+Period No:159
+Date:3/1/2028 12:00:00 AM
+Remaining Balance:$24,163.80
+Principal Paid:$424.42
+Interest Paid:$76.22
+Fixed Payment:$500.64
+Total Interest Paid:$39,700.79
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$44,000.00
+------------------------------------------------
+Period No:160
+Date:4/1/2028 12:00:00 AM
+Remaining Balance:$23,739.38
+Principal Paid:$425.76
+Interest Paid:$74.88
+Fixed Payment:$500.64
+Total Interest Paid:$39,775.66
+Extra Payment:$0.00
+Extra Payment Cumulative:$44,000.00
+------------------------------------------------
+Period No:161
+Date:5/1/2028 12:00:00 AM
+Remaining Balance:$22,313.62
+Principal Paid:$430.26
+Interest Paid:$70.38
+Fixed Payment:$500.64
+Total Interest Paid:$39,846.05
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$45,000.00
+------------------------------------------------
+Period No:162
+Date:6/1/2028 12:00:00 AM
+Remaining Balance:$21,883.36
+Principal Paid:$431.61
+Interest Paid:$69.02
+Fixed Payment:$500.64
+Total Interest Paid:$39,915.07
+Extra Payment:$0.00
+Extra Payment Cumulative:$45,000.00
+------------------------------------------------
+Period No:163
+Date:7/1/2028 12:00:00 AM
+Remaining Balance:$20,451.75
+Principal Paid:$436.13
+Interest Paid:$64.51
+Fixed Payment:$500.64
+Total Interest Paid:$39,979.58
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$46,000.00
+------------------------------------------------
+Period No:164
+Date:8/1/2028 12:00:00 AM
+Remaining Balance:$20,015.62
+Principal Paid:$437.51
+Interest Paid:$63.13
+Fixed Payment:$500.64
+Total Interest Paid:$40,042.71
+Extra Payment:$0.00
+Extra Payment Cumulative:$46,000.00
+------------------------------------------------
+Period No:165
+Date:9/1/2028 12:00:00 AM
+Remaining Balance:$18,578.11
+Principal Paid:$442.04
+Interest Paid:$58.60
+Fixed Payment:$500.64
+Total Interest Paid:$40,101.31
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$47,000.00
+------------------------------------------------
+Period No:166
+Date:10/1/2028 12:00:00 AM
+Remaining Balance:$18,136.07
+Principal Paid:$443.43
+Interest Paid:$57.20
+Fixed Payment:$500.64
+Total Interest Paid:$40,158.51
+Extra Payment:$0.00
+Extra Payment Cumulative:$47,000.00
+------------------------------------------------
+Period No:167
+Date:11/1/2028 12:00:00 AM
+Remaining Balance:$16,692.64
+Principal Paid:$447.99
+Interest Paid:$52.65
+Fixed Payment:$500.64
+Total Interest Paid:$40,211.16
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$48,000.00
+------------------------------------------------
+Period No:168
+Date:12/1/2028 12:00:00 AM
+Remaining Balance:$16,244.65
+Principal Paid:$449.40
+Interest Paid:$51.24
+Fixed Payment:$500.64
+Total Interest Paid:$40,262.40
+Extra Payment:$0.00
+Extra Payment Cumulative:$48,000.00
+------------------------------------------------
+Period No:169
+Date:1/1/2029 12:00:00 AM
+Remaining Balance:$14,795.25
+Principal Paid:$453.97
+Interest Paid:$46.67
+Fixed Payment:$500.64
+Total Interest Paid:$40,309.07
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$49,000.00
+------------------------------------------------
+Period No:170
+Date:2/1/2029 12:00:00 AM
+Remaining Balance:$14,341.28
+Principal Paid:$455.40
+Interest Paid:$45.23
+Fixed Payment:$500.64
+Total Interest Paid:$40,354.30
+Extra Payment:$0.00
+Extra Payment Cumulative:$49,000.00
+------------------------------------------------
+Period No:171
+Date:3/1/2029 12:00:00 AM
+Remaining Balance:$12,885.88
+Principal Paid:$459.99
+Interest Paid:$40.64
+Fixed Payment:$500.64
+Total Interest Paid:$40,394.95
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$50,000.00
+------------------------------------------------
+Period No:172
+Date:4/1/2029 12:00:00 AM
+Remaining Balance:$12,425.88
+Principal Paid:$461.44
+Interest Paid:$39.19
+Fixed Payment:$500.64
+Total Interest Paid:$40,434.14
+Extra Payment:$0.00
+Extra Payment Cumulative:$50,000.00
+------------------------------------------------
+Period No:173
+Date:5/1/2029 12:00:00 AM
+Remaining Balance:$10,964.44
+Principal Paid:$466.05
+Interest Paid:$34.58
+Fixed Payment:$500.64
+Total Interest Paid:$40,468.72
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$51,000.00
+------------------------------------------------
+Period No:174
+Date:6/1/2029 12:00:00 AM
+Remaining Balance:$10,498.39
+Principal Paid:$467.52
+Interest Paid:$33.11
+Fixed Payment:$500.64
+Total Interest Paid:$40,501.84
+Extra Payment:$0.00
+Extra Payment Cumulative:$51,000.00
+------------------------------------------------
+Period No:175
+Date:7/1/2029 12:00:00 AM
+Remaining Balance:$9,030.86
+Principal Paid:$472.15
+Interest Paid:$28.48
+Fixed Payment:$500.64
+Total Interest Paid:$40,530.32
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$52,000.00
+------------------------------------------------
+Period No:176
+Date:8/1/2029 12:00:00 AM
+Remaining Balance:$8,558.71
+Principal Paid:$473.64
+Interest Paid:$27.00
+Fixed Payment:$500.64
+Total Interest Paid:$40,557.32
+Extra Payment:$0.00
+Extra Payment Cumulative:$52,000.00
+------------------------------------------------
+Period No:177
+Date:9/1/2029 12:00:00 AM
+Remaining Balance:$7,085.07
+Principal Paid:$478.29
+Interest Paid:$22.35
+Fixed Payment:$500.64
+Total Interest Paid:$40,579.67
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$53,000.00
+------------------------------------------------
+Period No:178
+Date:10/1/2029 12:00:00 AM
+Remaining Balance:$6,606.78
+Principal Paid:$479.80
+Interest Paid:$20.84
+Fixed Payment:$500.64
+Total Interest Paid:$40,600.51
+Extra Payment:$0.00
+Extra Payment Cumulative:$53,000.00
+------------------------------------------------
+Period No:179
+Date:11/1/2029 12:00:00 AM
+Remaining Balance:$5,126.98
+Principal Paid:$484.47
+Interest Paid:$16.17
+Fixed Payment:$500.64
+Total Interest Paid:$40,616.68
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$54,000.00
+------------------------------------------------
+Period No:180
+Date:12/1/2029 12:00:00 AM
+Remaining Balance:$4,642.51
+Principal Paid:$485.99
+Interest Paid:$14.64
+Fixed Payment:$500.64
+Total Interest Paid:$40,631.32
+Extra Payment:$0.00
+Extra Payment Cumulative:$54,000.00
+------------------------------------------------
+Period No:181
+Date:1/1/2030 12:00:00 AM
+Remaining Balance:$3,156.52
+Principal Paid:$490.68
+Interest Paid:$9.96
+Fixed Payment:$500.64
+Total Interest Paid:$40,641.28
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$55,000.00
+------------------------------------------------
+Period No:182
+Date:2/1/2030 12:00:00 AM
+Remaining Balance:$2,665.83
+Principal Paid:$492.23
+Interest Paid:$8.41
+Fixed Payment:$500.64
+Total Interest Paid:$40,649.68
+Extra Payment:$0.00
+Extra Payment Cumulative:$55,000.00
+------------------------------------------------
+Period No:183
+Date:3/1/2030 12:00:00 AM
+Remaining Balance:$1,173.60
+Principal Paid:$496.94
+Interest Paid:$3.70
+Fixed Payment:$500.64
+Total Interest Paid:$40,653.39
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$56,000.00
+------------------------------------------------
+Period No:184
+Date:4/1/2030 12:00:00 AM
+Remaining Balance:$676.67
+Principal Paid:$498.50
+Interest Paid:$2.13
+Fixed Payment:$500.64
+Total Interest Paid:$40,655.52
+Extra Payment:$0.00
+Extra Payment Cumulative:$56,000.00
+------------------------------------------------
+Period No:185
+Date:5/1/2030 12:00:00 AM
+Remaining Balance:($821.83)
+Principal Paid:$503.23
+Interest Paid:($2.59)
+Fixed Payment:$500.64
+Total Interest Paid:$40,652.93
+Extra Payment:$1,000.00
+Extra Payment Cumulative:$57,000.00
+------------------------------------------------
