@@ -23,29 +23,31 @@ namespace MortgageAppLibrary.Models
         //Methods
         public bool ApplyPayment(DateTime paymentAmortizationDate) 
         {
-            
 
+            DateTime paymentAmortizationDateFOM=new DateTime(paymentAmortizationDate.Year,paymentAmortizationDate.Month,1);
+            DateTime startDateFOM = new DateTime(this.StartDate.Year, this.StartDate.Month, 1);
+            
             //1) Check to see if year/month of the value 
             bool hitStartDate = false;
-            if (paymentAmortizationDate.Month>= this.StartDate.Month && paymentAmortizationDate.Year>= this.StartDate.Year)
+            if (paymentAmortizationDateFOM >= startDateFOM)
             {
                 hitStartDate = true;
             };
 
             //2) Check the payment number AND decrease payment current count
-            bool paymentCountIsPositive = false;
-            if (PaymentCurrentCounter<this.NumberofPayments*this.PaymentInterval)
+            bool paymentCountIsPositive = true;
+            if (PaymentCurrentCounter>this.NumberofPayments)
             {
-                paymentCountIsPositive = true;
+                paymentCountIsPositive = false;
             };
 
             //3) Check interval with payment number AND reset interval counter
             bool hitPaymentInterval = false;
             //Increase the counter by 1
-            this.PaymentIntervalCounter = this.PaymentIntervalCounter + 1;
+            this.PaymentIntervalCounter ++;
 
             if (this.PaymentIntervalCounter==this.PaymentInterval ||
-                this.StartDate.Month==paymentAmortizationDate.Month  && this.StartDate.Year== paymentAmortizationDate.Year)
+                paymentAmortizationDateFOM == startDateFOM)
             {
                 hitPaymentInterval = true;
                 //Reset the counter
@@ -59,8 +61,8 @@ namespace MortgageAppLibrary.Models
                 applyPayment = true;
 
                 //if Payment is made, then the payment current counter increases
-                this.PaymentCurrentCounter = this.PaymentCurrentCounter + 1;
-                this.CumulativeExtraPayment = this.CumulativeExtraPayment + this.ExtraPaymentAmount;
+                this.PaymentCurrentCounter ++;
+                this.CumulativeExtraPayment += this.ExtraPaymentAmount;
             };
             return applyPayment;
         }
