@@ -22,7 +22,7 @@ namespace LoanApp
                 InterestRate = 0.03875M,
                 DownPayment = 11960M,
                 TotalLoanAmount = 119600M,
-                StartDate = new DateTime(2015, 1, 1)
+                StartDate = new DateTime(2021, 5, 1)
 
             };
 
@@ -37,9 +37,9 @@ namespace LoanApp
             var extraPayment1 = new ExtraPayments()
             {
                 ExtraPaymentAmount = 1000M,
-                NumberofPayments = 1,
+                NumberofPayments = 150,
                 PaymentInterval = 1,
-                StartDate= new DateTime(2037,11,1)
+                StartDate= new DateTime(2021,6,1)
             };
             
             var validateExtraPayment1 = new ExtraPaymentsValidator();
