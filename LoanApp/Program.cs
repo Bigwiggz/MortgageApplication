@@ -49,13 +49,13 @@ namespace LoanApp
                 testExtraPayments.Add(extraPayment1);
             }
 
-            /*
+            
             var extraPayment2 = new ExtraPayments()
             {
-                ExtraPaymentAmount = 10M,
+                ExtraPaymentAmount = 500M,
                 NumberofPayments = 20,
                 PaymentInterval = 3,
-                StartDate = new DateTime(2016, 1, 1)
+                StartDate = new DateTime(2021, 6, 1)
             };
 
             var validateExtraPayment2 = new ExtraPaymentsValidator();
@@ -68,10 +68,10 @@ namespace LoanApp
 
             var extraPayment3 = new ExtraPayments()
             {
-                ExtraPaymentAmount = 1M,
+                ExtraPaymentAmount = 10M,
                 NumberofPayments = 10,
                 PaymentInterval = 1,
-                StartDate = new DateTime(2016, 11, 1)
+                StartDate = new DateTime(2021, 6, 1)
             };
             
             
@@ -81,17 +81,17 @@ namespace LoanApp
             {
                 testExtraPayments.Add(extraPayment3);
             }
-            */
+            
 
             var testMortgageValuesExtraPayments = new MortgageInputExtraPayments()
             {
                 LoanDescription = "This is a test loan",
                 LoanTerm = 30,
                 InterestRate = 0.03875M,
-                DownPayment = 10000M,
+                DownPayment = 11960M,
                 TotalLoanAmount = 119600M,
-                StartDate = new DateTime(2015, 1, 1),
-                ExtraPayments=testExtraPayments
+                StartDate = new DateTime(2021, 5, 1),
+                ExtraPayments =testExtraPayments
 
             };
 
