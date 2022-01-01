@@ -691,7 +691,7 @@ namespace LoanAppWinFormsNET5UI
             // btnCreatePDF
             // 
             this.btnCreatePDF.Image = ((System.Drawing.Image)(resources.GetObject("btnCreatePDF.Image")));
-            this.btnCreatePDF.Location = new System.Drawing.Point(805, 6);
+            this.btnCreatePDF.Location = new System.Drawing.Point(805, 5);
             this.btnCreatePDF.Name = "btnCreatePDF";
             this.btnCreatePDF.Size = new System.Drawing.Size(50, 50);
             this.btnCreatePDF.TabIndex = 17;

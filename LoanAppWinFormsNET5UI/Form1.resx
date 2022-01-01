@@ -57,11 +57,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="btnCreateExcelFile.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCreateExcelFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAABPZJREFUWEftmP1TVFUYx/tDmggEZXIqm2nQfml0SIOgITKklxmwN9AGDGEBFQLS
+        vQAADr0BR/uQrQAABPZJREFUWEftmP1TVFUYx/tDmggEZXIqm2nQfml0SIOgITKklxmwN9AGDGEBFQLS
         RAmSF21CERSxHIPBaBSENGEkFE15HUiJQAw0JIFll5lgl2/Pc/Buu8u57N0XJ5vpOp+5e+8ez/nsfZ7z
         nHN5zGg04lHmf0F38Zjg5OQkDAaD9DtXUPrziKCn5SYmJiz9uS2o1+sxNTUl/c4V7PtzW5B/6ej4GC7d
         aMOxizVIqyxE/PFsVF9pkLZ3hH0knBI0GA3oGOhF1eV67Pn+EN47nI7nMyPgnbQWXokv4Ukrdp36StqH
@@ -85,10 +85,10 @@
         ysF/k/+WoFqxtIZzSGuoPNHfI/4Ejfgbnk1R3Rd95/EAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnCreateTextFile.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCreateTextFile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAArtJREFUWEflmMtO8kAYhkEiAobDZcBSRLkAgbAnLAg7r8WF3IFuiCRGFxAOCZAY
+        vQAADr0BR/uQrQAAArtJREFUWEflmMtO8kAYhkEiAobDZcBSRLkAgbAnLAg7r8WF3IFuiCRGFxAOCZAY
         bgD1LuSgJCTqRjEKn3nHaW2hQqdO/c3vm7xJO9P5vqeHmc6Mg365VgKORiPqdDrUaDSE3Wq16OnpiUey
         pi8BHx8faX9/n9bX18nhcFj27u4uPTw88KjiMgTEXSOwUUIr/g6kIWChUNAlWFtbY0/SrF0ul649vLOz
         YwlyAXA2m1EkElEDb21t0c3NDb28vJj2+fm5Dk6xlSe5APj6+kqbm5tq0JOTE15jXuVyWQemNSDv7+/5
@@ -103,10 +103,10 @@
         NwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnCreatePDF.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCreatePDF.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB8AAAAoCAYAAAAG0SEsAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAAqFJREFUWEftmEFLG0EUgBfLLurRi4iIgoqgIoJ40YMg6kX05A/w5lHIoVhtayhU
+        wQAADsEBuJFr7QAAAqFJREFUWEftmEFLG0EUgBfLLurRi4iIgoqgIoJ40YMg6kX05A/w5lHIoVhtayhU
         KrtbBL2IigdvBS+CR0EQD01STIxoYpuWNo2JsbRNxMbEuM+dl802NbNNup00h+bBBzt5k/fNvll2YbhX
         HPfAJghP7TwftAsC/A2+nh5IyLKSlCQLl0+85nkrrZAZiPxGlpGEJD3UFMah3vE5rZAZMuW4AFl+pGno
         QStilvtyXIAoPtZU2UErYhaanHAtSbOa7tegFTGLkZwQF8VnmvJn0IqY5XdyRBSfa9pU0IqYJaecIEkv

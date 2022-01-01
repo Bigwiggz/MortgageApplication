@@ -108,7 +108,6 @@ namespace LoanApp
 
             summaryMortgageInfo.CalculateMortgageExecutiveSummary(testAmortizationSchedule, testMortgageValuesExtraPayments);
 
-
             //Print out results
             foreach (var period in testAmortizationSchedule)
             {
@@ -148,6 +147,8 @@ namespace LoanApp
 
             string textFileNameAndPath = @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\LoanApp\Output\textOutputFile.txt";
             File.WriteAllBytes(textFileNameAndPath, textByteArray);
+
+
         }
     }
 }
