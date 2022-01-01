@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using MortgageAppLibrary.Models;
 using MortgageAppLibrary.Services.Excel;
@@ -36,7 +37,7 @@ namespace LoanApp
             
             var extraPayment1 = new ExtraPayments()
             {
-                ExtraPaymentAmount = 1000M,
+                ExtraPaymentAmount = 100M,
                 NumberofPayments = 150,
                 PaymentInterval = 1,
                 StartDate= new DateTime(2021,6,1)
@@ -68,9 +69,9 @@ namespace LoanApp
 
             var extraPayment3 = new ExtraPayments()
             {
-                ExtraPaymentAmount = 10M,
+                ExtraPaymentAmount = 1000M,
                 NumberofPayments = 10,
-                PaymentInterval = 1,
+                PaymentInterval = 12,
                 StartDate = new DateTime(2021, 6, 1)
             };
             
@@ -135,12 +136,18 @@ namespace LoanApp
             //Excel Print
             var excelApp = new ExcelMortgageOutput();
 
-            var excelbyteArray=excelApp.CreateExcelTestFile(amortizationSchedule, testAmortizationSchedule, summaryMortgageInfo);
+            var excelByteArray=excelApp.CreateExcelTestFile(amortizationSchedule, testAmortizationSchedule, summaryMortgageInfo);
+
+            string excelFileNameAndPath = @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\LoanApp\Output\excelOutputFile.xlsx";
+            File.WriteAllBytes(excelFileNameAndPath, excelByteArray);
 
             //Text File Print
             var textPrint = new TextMortgageOutput();
 
             var textByteArray=textPrint.CreateTextFile(testAmortizationSchedule);
+
+            string textFileNameAndPath = @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\LoanApp\Output\textOutputFile.txt";
+            File.WriteAllBytes(textFileNameAndPath, textByteArray);
         }
     }
 }
