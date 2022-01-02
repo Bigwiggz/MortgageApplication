@@ -20,7 +20,7 @@ namespace LoanAppWinFormsNET5UI
     public partial class mainForm : Form
     {
 
-        private ExtraPayments extraPayment = new ExtraPayments();
+        
         private BindingList<ExtraPayments> extraPaymentsList = new BindingList<ExtraPayments>();
         private MortgageInputExtraPayments mortgageInput = new MortgageInputExtraPayments();
         private MortgageInput baseMortgageInput = new MortgageInput();
@@ -68,7 +68,9 @@ namespace LoanAppWinFormsNET5UI
 
             //Fire Event
             OnClickbtnAddExtraPaymentTest(EventArgs.Empty);
-            
+
+            //Create new extra payment
+            ExtraPayments extraPayment = new ExtraPayments();
 
             //Add value to extra payment
             extraPayment.ExtraPaymentAmount = decimal.Parse(txtExtraPaymentAmount.Text);

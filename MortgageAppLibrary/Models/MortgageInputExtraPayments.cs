@@ -92,6 +92,7 @@ namespace MortgageAppLibrary.Models
             decimal cumulativePrincipalPayments = 0M;
             int i = 1;
             decimal remainingBalanceCounter;
+            decimal previousRemainingBalance=0;
 
             //Loop thru amortization schedule
             do
@@ -128,19 +129,29 @@ namespace MortgageAppLibrary.Models
                 //Add together the cumulative extra payments
                 record.CumulativeExtraPayment = cumulativeExtraPayment;
 
-                //Add remaining balance
-                record.RemainingBalance = loanAmount - cumulativePrincipalPayments - record.CumulativeExtraPayment;
 
-                //Calculate the interest paid
-                record.InterestPaid = CalculatePeriodInterest(record.RemainingBalance, this.InterestRate);
+                //TODO: FIX THIS LOOK AT CFT LOAN SHARK ON YOUR GITHUB
+                if (i == 1)
+                {
+                    record.InterestPaid=CalculatePeriodInterest(loanAmount - record.CumulativeExtraPayment, this.InterestRate);
+                }
+                else
+                {
+                    //Calculate the interest paid
+                    record.InterestPaid = CalculatePeriodInterest(previousRemainingBalance, this.InterestRate);
+                }
+
+                //Add total interest paid
+                totalInterest = totalInterest + record.InterestPaid;
+                record.TotalInterestPaid = totalInterest;
 
                 //Add in monthly principal paid
                 record.PrincipalPaid = CalculatePeriodPrincipal(record.InterestPaid, fixedPeriodPayment);
                 cumulativePrincipalPayments = cumulativePrincipalPayments + record.PrincipalPaid;
 
-                //Add total interest paid
-                totalInterest = totalInterest + record.InterestPaid;
-                record.TotalInterestPaid = totalInterest;
+                //Add remaining balance
+                record.RemainingBalance = loanAmount - cumulativePrincipalPayments - record.CumulativeExtraPayment;
+                previousRemainingBalance = record.RemainingBalance;
 
                 //Add to result list
                 result.Add(record);

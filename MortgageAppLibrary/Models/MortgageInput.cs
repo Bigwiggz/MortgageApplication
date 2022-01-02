@@ -81,6 +81,7 @@ namespace MortgageAppLibrary.Models
             int numberOfPeriods = this.LoanTerm * 12;
             decimal cumulativePrincipalPayments = 0M;
             decimal totalInterest = 0M;
+            decimal previousRemainingBalance = 0;
 
             for (int i = 0; i < numberOfPeriods; i++)
             {
@@ -94,19 +95,27 @@ namespace MortgageAppLibrary.Models
                 //Add in fixed monthly amount
                 record.fixedPayment = fixedPeriodPayment;
 
-                //Add remaining balance
-                record.RemainingBalance = loanAmount - cumulativePrincipalPayments;
-
                 //Calculate the interest paid
-                record.InterestPaid = CalculatePeriodInterest(record.RemainingBalance, this.InterestRate);
+                if (i == 0)
+                {
+                    record.InterestPaid=CalculatePeriodInterest(loanAmount,this.InterestRate);
+                }
+                else
+                {
+                    record.InterestPaid = CalculatePeriodInterest(previousRemainingBalance, this.InterestRate);
+                }
+
+                //Add total interest paid
+                totalInterest = totalInterest + record.InterestPaid;
+                record.TotalInterestPaid = totalInterest;
 
                 //Add in monthly principal paid
                 record.PrincipalPaid = CalculatePeriodPrincipal(record.InterestPaid, fixedPeriodPayment);
                 cumulativePrincipalPayments = cumulativePrincipalPayments + record.PrincipalPaid;
 
-                //Add total interest paid
-                totalInterest = totalInterest + record.InterestPaid;
-                record.TotalInterestPaid = totalInterest;
+                //Add remaining balance
+                record.RemainingBalance = loanAmount - cumulativePrincipalPayments;
+                previousRemainingBalance = record.RemainingBalance;
 
                 //Add to result list
                 result.Add(record);
