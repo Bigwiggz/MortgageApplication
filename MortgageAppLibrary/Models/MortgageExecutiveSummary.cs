@@ -40,7 +40,7 @@ namespace MortgageAppLibrary.Models
 
         public decimal TotalActualLoanPayment { get; private set; }
 
-        //
+        //-------------------------------------------------------------------
 
         private decimal CalculateFixedMonthlyPayment(decimal remainingLoanAmt, decimal interestRate, int loanTerm)
         {
