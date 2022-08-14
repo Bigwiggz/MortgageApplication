@@ -114,43 +114,47 @@ namespace LoanAppWinFormsNET5UI
                 }
             }
 
-            //Extra Payments
-            dgvExtraPaymentsTable.AutoGenerateColumns = false;
-            //dgvExtraPaymentsTable.AutoSizeColumnsMode = true;
-            var source2 = new BindingSource(extraPaymentsList, null);
-            dgvExtraPaymentsTable.DataSource = source2;
+            if (extraPaymentsList.Count == 1)
+            {
+                //Extra Payments
+                dgvExtraPaymentsTable.AutoGenerateColumns = false;
+                //dgvExtraPaymentsTable.AutoSizeColumnsMode = true;
+                var source2 = new BindingSource(extraPaymentsList, null);
+                dgvExtraPaymentsTable.DataSource = source2;
 
-            // Initialize and add column Extra Payment Amt
-            DataGridViewColumn column1A = new DataGridViewTextBoxColumn();
-            column1A.DataPropertyName = "ExtraPaymentAmount";
-            column1A.Frozen = false;
-            column1A.Name = "Extra Payment Amt";
-            dgvExtraPaymentsTable.Columns.Add(column1A);
+                // Initialize and add column Extra Payment Amt
+                DataGridViewColumn column1A = new DataGridViewTextBoxColumn();
+                column1A.DataPropertyName = "ExtraPaymentAmount";
+                column1A.Frozen = false;
+                column1A.Name = "Extra Payment Amt";
+                dgvExtraPaymentsTable.Columns.Add(column1A);
 
-            // Initialize and add column Date
-            DataGridViewColumn column2A = new DataGridViewTextBoxColumn();
-            column2A.DataPropertyName = "StartDate";
-            column2A.Frozen = false;
-            column2A.Name = "Date";
-            dgvExtraPaymentsTable.Columns.Add(column2A);
+                // Initialize and add column Date
+                DataGridViewColumn column2A = new DataGridViewTextBoxColumn();
+                column2A.DataPropertyName = "StartDate";
+                column2A.Frozen = false;
+                column2A.Name = "Date";
+                dgvExtraPaymentsTable.Columns.Add(column2A);
 
-            // Initialize and add column No of Payments
-            DataGridViewColumn column3A = new DataGridViewTextBoxColumn();
-            column3A.DataPropertyName = "NumberofPayments";
-            column3A.Frozen = false;
-            column3A.Name = "No of Payments";
-            dgvExtraPaymentsTable.Columns.Add(column3A);
+                // Initialize and add column No of Payments
+                DataGridViewColumn column3A = new DataGridViewTextBoxColumn();
+                column3A.DataPropertyName = "NumberofPayments";
+                column3A.Frozen = false;
+                column3A.Name = "No of Payments";
+                dgvExtraPaymentsTable.Columns.Add(column3A);
 
-            // Initialize and add column Payment Interval
-            DataGridViewColumn column4A = new DataGridViewTextBoxColumn();
-            column4A.DataPropertyName = "PaymentInterval";
-            column4A.Frozen = false;
-            column4A.Name = "Payment Interval";
-            dgvExtraPaymentsTable.Columns.Add(column4A);
+                // Initialize and add column Payment Interval
+                DataGridViewColumn column4A = new DataGridViewTextBoxColumn();
+                column4A.DataPropertyName = "PaymentInterval";
+                column4A.Frozen = false;
+                column4A.Name = "Payment Interval";
+                dgvExtraPaymentsTable.Columns.Add(column4A);
 
-            //Column formatting
-            dgvExtraPaymentsTable.Columns["Extra Payment Amt"].DefaultCellStyle.Format = "c";
-            dgvExtraPaymentsTable.ScrollBars = ScrollBars.Vertical;
+                //Column formatting
+                dgvExtraPaymentsTable.Columns["Extra Payment Amt"].DefaultCellStyle.Format = "c";
+                dgvExtraPaymentsTable.ScrollBars = ScrollBars.Vertical;
+            }
+
 
         }
 
