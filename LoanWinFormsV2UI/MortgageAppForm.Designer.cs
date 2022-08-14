@@ -58,7 +58,7 @@
             this.totalLoanAmountTextBox = new System.Windows.Forms.TextBox();
             this.extraPaymentsGroup = new System.Windows.Forms.GroupBox();
             this.extraPaymentsDataGrid = new System.Windows.Forms.DataGridView();
-            this.addExtraPaymentsButton = new System.Windows.Forms.Button();
+            this.addExtraPaymentButton = new System.Windows.Forms.Button();
             this.startDateOfExtraPaymentsValidationText = new System.Windows.Forms.Label();
             this.startDateOfExtraPaymentsLabel = new System.Windows.Forms.Label();
             this.startDateOfExtraPaymentsDatePicker = new System.Windows.Forms.DateTimePicker();
@@ -94,6 +94,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.resultsDataGrid = new System.Windows.Forms.DataGridView();
             this.clearAllButton = new System.Windows.Forms.Button();
+            this.createExcelFileButton = new System.Windows.Forms.Button();
+            this.createPDFButton = new System.Windows.Forms.Button();
+            this.createTextFileButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.enterMortgageInformationGroup.SuspendLayout();
             this.extraPaymentsGroup.SuspendLayout();
@@ -382,7 +385,7 @@
             // extraPaymentsGroup
             // 
             this.extraPaymentsGroup.Controls.Add(this.extraPaymentsDataGrid);
-            this.extraPaymentsGroup.Controls.Add(this.addExtraPaymentsButton);
+            this.extraPaymentsGroup.Controls.Add(this.addExtraPaymentButton);
             this.extraPaymentsGroup.Controls.Add(this.startDateOfExtraPaymentsValidationText);
             this.extraPaymentsGroup.Controls.Add(this.startDateOfExtraPaymentsLabel);
             this.extraPaymentsGroup.Controls.Add(this.startDateOfExtraPaymentsDatePicker);
@@ -412,15 +415,15 @@
             this.extraPaymentsDataGrid.Size = new System.Drawing.Size(586, 87);
             this.extraPaymentsDataGrid.TabIndex = 29;
             // 
-            // addExtraPaymentsButton
+            // addExtraPaymentButton
             // 
-            this.addExtraPaymentsButton.Location = new System.Drawing.Point(477, 73);
-            this.addExtraPaymentsButton.Name = "addExtraPaymentsButton";
-            this.addExtraPaymentsButton.Size = new System.Drawing.Size(104, 40);
-            this.addExtraPaymentsButton.TabIndex = 28;
-            this.addExtraPaymentsButton.Text = "Add Extra Payments";
-            this.addExtraPaymentsButton.UseVisualStyleBackColor = true;
-            this.addExtraPaymentsButton.Click += new System.EventHandler(this.addExtraPaymentsButton_Click);
+            this.addExtraPaymentButton.Location = new System.Drawing.Point(477, 73);
+            this.addExtraPaymentButton.Name = "addExtraPaymentButton";
+            this.addExtraPaymentButton.Size = new System.Drawing.Size(104, 40);
+            this.addExtraPaymentButton.TabIndex = 28;
+            this.addExtraPaymentButton.Text = "Add Extra Payment";
+            this.addExtraPaymentButton.UseVisualStyleBackColor = true;
+            this.addExtraPaymentButton.Click += new System.EventHandler(this.addExtraPaymentsButton_Click);
             // 
             // startDateOfExtraPaymentsValidationText
             // 
@@ -776,11 +779,44 @@
             this.clearAllButton.Text = "Clear All";
             this.clearAllButton.UseVisualStyleBackColor = true;
             // 
+            // createExcelFileButton
+            // 
+            this.createExcelFileButton.Location = new System.Drawing.Point(712, 12);
+            this.createExcelFileButton.Name = "createExcelFileButton";
+            this.createExcelFileButton.Size = new System.Drawing.Size(57, 54);
+            this.createExcelFileButton.TabIndex = 21;
+            this.createExcelFileButton.Text = "Create Excel";
+            this.createExcelFileButton.UseVisualStyleBackColor = true;
+            this.createExcelFileButton.Click += new System.EventHandler(this.createExcelFileButton_Click);
+            // 
+            // createPDFButton
+            // 
+            this.createPDFButton.Location = new System.Drawing.Point(775, 12);
+            this.createPDFButton.Name = "createPDFButton";
+            this.createPDFButton.Size = new System.Drawing.Size(57, 54);
+            this.createPDFButton.TabIndex = 22;
+            this.createPDFButton.Text = "Create PDF";
+            this.createPDFButton.UseVisualStyleBackColor = true;
+            this.createPDFButton.Click += new System.EventHandler(this.createPDFButton_Click);
+            // 
+            // createTextFileButton
+            // 
+            this.createTextFileButton.Location = new System.Drawing.Point(838, 12);
+            this.createTextFileButton.Name = "createTextFileButton";
+            this.createTextFileButton.Size = new System.Drawing.Size(57, 54);
+            this.createTextFileButton.TabIndex = 23;
+            this.createTextFileButton.Text = "Create Text File";
+            this.createTextFileButton.UseVisualStyleBackColor = true;
+            this.createTextFileButton.Click += new System.EventHandler(this.createTextFileButton_Click);
+            // 
             // loanAppMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1073, 680);
+            this.Controls.Add(this.createTextFileButton);
+            this.Controls.Add(this.createPDFButton);
+            this.Controls.Add(this.createExcelFileButton);
             this.Controls.Add(this.clearAllButton);
             this.Controls.Add(this.resultsGroup);
             this.Controls.Add(this.extraPaymentsGroup);
@@ -846,7 +882,7 @@
         private Label extraPaymentAmountValidationText;
         private Label extraPaymentAmountLabel;
         private TextBox extraPaymentAmountTextBox;
-        private Button addExtraPaymentsButton;
+        private Button addExtraPaymentButton;
         private GroupBox resultsGroup;
         private DataGridView resultsDataGrid;
         private Label conventionalLoanAmtLabel;
@@ -872,5 +908,8 @@
         private Button calculateMortgageButton;
         private Button clearAllButton;
         private DataGridView extraPaymentsDataGrid;
+        private Button createExcelFileButton;
+        private Button createPDFButton;
+        private Button createTextFileButton;
     }
 }
