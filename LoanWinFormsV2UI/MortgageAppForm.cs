@@ -58,6 +58,9 @@ public partial class loanAppMainForm : Form
         toolTip1.SetToolTip(this.paymentIntervalLabel, "Please enter your payment interval in months.  For example a payment interval of every 2 months would be 2.");
         toolTip1.SetToolTip(this.startDateOfExtraPaymentsLabel, "Please enter the date of your first extra payment.");
 
+        //Textbox Mask
+        
+
         //Add Automapper
         _mapper = mapper;
 
@@ -227,6 +230,17 @@ public partial class loanAppMainForm : Form
             interestReductionLabel.Text = _execSummary.ExtraPaymentInterestReduction.ToString("c");
             totalPaidLabel.Text = _execSummary.TotalActualLoanPayment.ToString("c");
             conventionalLoanAmtLabel.Text = _execSummary.TotalConvetionalLoanPayment.ToString("c");
+
+            loanAmountLabel.Visible = true;
+            totalTermLabel.Visible = true;
+            interestRateLabel.Visible = true;
+            startDateLabel.Visible = true;
+            totalExtraPaymentsLabel.Visible = true;
+            endDateLabel.Visible = true;
+            totalInterestPaidLabel.Visible = true;
+            interestReductionLabel.Visible = true;
+            totalPaidLabel.Visible = true;
+            conventionalLoanAmtLabel.Visible = true;
 
             if (_amortizationScheduleResults.Count > 1)
             {
