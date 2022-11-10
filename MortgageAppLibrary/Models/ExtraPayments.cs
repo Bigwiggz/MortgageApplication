@@ -13,13 +13,13 @@ namespace MortgageAppLibrary.Models
 
         public int NumberofPayments { get; set; }
 
-        private int PaymentCurrentCounter { get; set; } = 0;
+        public int PaymentCurrentCounter { get; set; } = 0;
 
         public int PaymentInterval { get; set; }
 
-        private int PaymentIntervalCounter { get; set; } = 0;
+        public int PaymentIntervalCounter { get; set; } = 0;
 
-        public decimal CumulativeExtraPayment { get; private set; } = 0;
+        public decimal CumulativeExtraPayment { get; set; } = 0;
 
         //Methods
         public bool ApplyPayment(DateTime paymentAmortizationDate) 
@@ -37,7 +37,7 @@ namespace MortgageAppLibrary.Models
 
             //2) Check the payment number AND decrease payment current count
             bool paymentCountIsPositive = true;
-            if (PaymentCurrentCounter>this.NumberofPayments)
+            if (PaymentCurrentCounter>=this.NumberofPayments)
             {
                 paymentCountIsPositive = false;
             };

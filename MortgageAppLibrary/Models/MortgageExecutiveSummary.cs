@@ -8,37 +8,37 @@ namespace MortgageAppLibrary.Models
     public class MortgageExecutiveSummary
     {
         //------------------------------------------------------------------EXECUTIVE SUMMARY
-        public decimal ExtraPaymentLoanTerm { get; private set; }
+        public decimal ExtraPaymentLoanTerm { get; set; }
 
-        public decimal ExtraPaymentInterestReduction { get; private set; }
+        public decimal ExtraPaymentInterestReduction { get; set; }
 
-        public DateTime ExtraPaymentLastDate { get; private set; }
+        public DateTime ExtraPaymentLastDate { get; set; }
 
         //------------------------------------------------------------------MORTGAGE INPUT
 
-        public decimal ActualLoanAmount { get; private set; }
+        public decimal ActualLoanAmount { get; set; }
 
-        public int OriginalLoanTerm { get; private set; }
+        public int OriginalLoanTerm { get; set; }
 
-        public decimal InterestRate { get; private set; }
+        public decimal InterestRate { get; set; }
 
-        public string LoanDescription { get; private set; }
+        public string LoanDescription { get; set; }
 
-        public DateTime StartDate { get; private set; }
+        public DateTime StartDate { get; set; }
 
-        public decimal FixedMonthlyPayment { get; private set; }
+        public decimal FixedMonthlyPayment { get; set; }
 
-        public decimal ConventionalInterestAmount { get; private set; }
+        public decimal ConventionalInterestAmount { get; set; }
 
-        public decimal TotalConvetionalLoanPayment { get; private set; }
+        public decimal TotalConvetionalLoanPayment { get; set; }
 
         //-------------------------------------------------------------------TOTAL INTEREST PAID-Extra Payments
 
-        public decimal TotalInterestPaid { get; private set; }
+        public decimal TotalInterestPaid { get; set; }
 
-        public decimal CumulativeExtraPayment { get; private set; }
+        public decimal CumulativeExtraPayment { get; set; }
 
-        public decimal TotalActualLoanPayment { get; private set; }
+        public decimal TotalActualLoanPayment { get; set; }
 
         //-------------------------------------------------------------------
 

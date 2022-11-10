@@ -5,6 +5,7 @@ using MortgageAppLibrary.Models;
 using MortgageAppLibrary.Services.Excel;
 using MortgageAppLibrary.Services.TextFile;
 using MortgageAppLibrary.Validators;
+using MortgageAppLibrary.Services.MortgageServices;
 
 namespace LoanApp
 {
@@ -19,28 +20,34 @@ namespace LoanApp
             var mortgageValues = new MortgageInput()
             {
                 LoanDescription = "This is a test loan",
-                LoanTerm = 30,
-                InterestRate = 0.03875M,
-                DownPayment = 11960M,
-                TotalLoanAmount = 119600M,
-                StartDate = new DateTime(2021, 5, 1)
+                LoanTerm = 5,
+                InterestRate = 0.0374M,
+                DownPayment = 10000M,
+                TotalLoanAmount = 32000M,
+                StartDate = new DateTime(2022, 11, 10)
 
             };
 
             var validateMortgageInput = new MortgageInputValidator();
             var resultTraditionalMortgageInput = validateMortgageInput.Validate(mortgageValues); 
 
-            var amortizationSchedule = mortgageValues.CalculatedPeriodMortgageData();
+            if (resultTraditionalMortgageInput.IsValid == false)
+            {
+                throw new NotImplementedException();
+            }
+
+            var mortgageAmortizationScheduleService = new MortgagePaymentScheduleService();
+            var amortizationSchedule = mortgageAmortizationScheduleService.CalculatedPeriodMortgageData(mortgageValues);
             //--------------------------------------------------------------------------------------------------------
 
             List<ExtraPayments> testExtraPayments = new List<ExtraPayments>();
             
             var extraPayment1 = new ExtraPayments()
             {
-                ExtraPaymentAmount = 100M,
-                NumberofPayments = 150,
+                ExtraPaymentAmount = 10000M,
+                NumberofPayments = 1,
                 PaymentInterval = 1,
-                StartDate= new DateTime(2021,6,1)
+                StartDate= new DateTime(2022, 11, 10)
             };
             
             var validateExtraPayment1 = new ExtraPaymentsValidator();
@@ -53,10 +60,10 @@ namespace LoanApp
             
             var extraPayment2 = new ExtraPayments()
             {
-                ExtraPaymentAmount = 500M,
-                NumberofPayments = 20,
-                PaymentInterval = 3,
-                StartDate = new DateTime(2021, 6, 1)
+                ExtraPaymentAmount = 2500M,
+                NumberofPayments = 1,
+                PaymentInterval = 1,
+                StartDate = new DateTime(2023, 4, 11)
             };
 
             var validateExtraPayment2 = new ExtraPaymentsValidator();
@@ -69,10 +76,10 @@ namespace LoanApp
 
             var extraPayment3 = new ExtraPayments()
             {
-                ExtraPaymentAmount = 1000M,
-                NumberofPayments = 10,
-                PaymentInterval = 12,
-                StartDate = new DateTime(2021, 6, 1)
+                ExtraPaymentAmount = 1M,
+                NumberofPayments = 1,
+                PaymentInterval = 1,
+                StartDate = new DateTime(2022, 11, 10)
             };
             
             
@@ -87,11 +94,11 @@ namespace LoanApp
             var testMortgageValuesExtraPayments = new MortgageInputExtraPayments()
             {
                 LoanDescription = "This is a test loan",
-                LoanTerm = 30,
-                InterestRate = 0.03875M,
-                DownPayment = 11960M,
-                TotalLoanAmount = 119600M,
-                StartDate = new DateTime(2021, 5, 1),
+                LoanTerm = 5,
+                InterestRate = 0.0374M,
+                DownPayment = 10000M,
+                TotalLoanAmount = 32000M,
+                StartDate = new DateTime(2022, 11, 10),
                 ExtraPayments =testExtraPayments
 
             };
@@ -100,13 +107,11 @@ namespace LoanApp
             var mortgageResult = validateMortgageValues.Validate(testMortgageValuesExtraPayments);
 
             //Create Amortization Schedule
-
-            var testAmortizationSchedule = testMortgageValuesExtraPayments.CalculatedPeriodMortgageData();
+            var testAmortizationSchedule = mortgageAmortizationScheduleService.CalculatedExtraPaymentPeriodMortgageData(testMortgageValuesExtraPayments);
 
             //Calculate Summary Values
-            var summaryMortgageInfo = new MortgageExecutiveSummary();
-
-            summaryMortgageInfo.CalculateMortgageExecutiveSummary(testAmortizationSchedule, testMortgageValuesExtraPayments);
+            var executiveMortgageSummaryService = new MortgageExecutiveSummaryService();
+            var summaryMortgageInfo = executiveMortgageSummaryService.CalculateMortgageExecutiveSummary(testAmortizationSchedule, testMortgageValuesExtraPayments);
 
             //Print out results
             foreach (var period in testAmortizationSchedule)
