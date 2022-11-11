@@ -241,6 +241,7 @@ namespace LoanAppWinFormsNET5UI
             this.txtDownPayment.Name = "txtDownPayment";
             this.txtDownPayment.Size = new System.Drawing.Size(100, 23);
             this.txtDownPayment.TabIndex = 3;
+            this.txtDownPayment.Leave += new System.EventHandler(this.txtDownPayment_Leave);
             // 
             // labelDownPayment
             // 
@@ -257,6 +258,7 @@ namespace LoanAppWinFormsNET5UI
             this.txtTotalLoanAmount.Name = "txtTotalLoanAmount";
             this.txtTotalLoanAmount.Size = new System.Drawing.Size(100, 23);
             this.txtTotalLoanAmount.TabIndex = 1;
+            this.txtTotalLoanAmount.Leave += new System.EventHandler(this.txtTotalLoanAmount_Leave);
             // 
             // labelTotalLoanAmount
             // 
@@ -407,6 +409,7 @@ namespace LoanAppWinFormsNET5UI
             this.txtExtraPaymentAmount.Name = "txtExtraPaymentAmount";
             this.txtExtraPaymentAmount.Size = new System.Drawing.Size(100, 23);
             this.txtExtraPaymentAmount.TabIndex = 7;
+            this.txtExtraPaymentAmount.Leave += new System.EventHandler(this.txtExtraPaymentAmount_Leave);
             // 
             // labelExtraPaymentAmount
             // 

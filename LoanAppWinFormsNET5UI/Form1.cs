@@ -14,6 +14,8 @@ using LoanAppWinFormsNET5UI.Properties;
 using MortgageAppLibrary.Services.Excel;
 using System.IO;
 using MortgageAppLibrary.Services.TextFile;
+using MortgageAppLibrary.Services.MortgageServices;
+using System.Globalization;
 
 namespace LoanAppWinFormsNET5UI
 {
@@ -27,6 +29,14 @@ namespace LoanAppWinFormsNET5UI
         private BindingList<MonthlyCalculatedValuesExtraPayments> amortizationScheduleBindingList = new BindingList<MonthlyCalculatedValuesExtraPayments>();
         private MortgageExecutiveSummary execSummary = new MortgageExecutiveSummary();
         private List<MonthlyCalculatedValues> basicAmmortizationSchedule = new List<MonthlyCalculatedValues>();
+
+
+        private MortgageExecutiveSummaryService _mortgageExecutiveSummaryService=new MortgageExecutiveSummaryService();
+        private MortgagePaymentScheduleService _mortgagePaymentScheduleService = new MortgagePaymentScheduleService();
+
+        private string enteredTxtTotalAmount;
+        private string enteredtxtDownPayment;
+        private string enteredtxtExtraPaymentAmount;
 
         //Add Event Class
         public event EventHandler btnAddExtraPaymentClicked;
@@ -73,7 +83,7 @@ namespace LoanAppWinFormsNET5UI
             ExtraPayments extraPayment = new ExtraPayments();
 
             //Add value to extra payment
-            extraPayment.ExtraPaymentAmount = decimal.Parse(txtExtraPaymentAmount.Text);
+            extraPayment.ExtraPaymentAmount = decimal.Parse(enteredtxtExtraPaymentAmount);
             extraPayment.NumberofPayments = Int32.Parse(txtNumberofExtraPayments.Text);
             extraPayment.PaymentInterval = Int32.Parse(txtPaymentInterval.Text);
             extraPayment.StartDate = dtFirstExtraPayment.Value;
@@ -179,17 +189,17 @@ namespace LoanAppWinFormsNET5UI
 
 
             //Add the Mortgage Value Information
-            mortgageInput.TotalLoanAmount = decimal.Parse(txtTotalLoanAmount.Text);
-            mortgageInput.DownPayment = decimal.Parse(txtDownPayment.Text);
-            mortgageInput.InterestRate = decimal.Parse(txtInterestRate.Text);
+            mortgageInput.TotalLoanAmount = decimal.Parse(enteredTxtTotalAmount);
+            mortgageInput.DownPayment = decimal.Parse(enteredtxtDownPayment);
+            mortgageInput.InterestRate = decimal.Parse(txtInterestRate.Text)/100;
             mortgageInput.LoanTerm = Int32.Parse(txtLoanTerm.Text);
             mortgageInput.StartDate = dtMortgageStartDate.Value;
             mortgageInput.ExtraPayments = extraPaymentsList.ToList();
 
             //Add base mortgageInput
-            baseMortgageInput.TotalLoanAmount = decimal.Parse(txtTotalLoanAmount.Text);
-            baseMortgageInput.DownPayment = decimal.Parse(txtDownPayment.Text);
-            baseMortgageInput.InterestRate = decimal.Parse(txtInterestRate.Text);
+            baseMortgageInput.TotalLoanAmount = decimal.Parse(enteredTxtTotalAmount);
+            baseMortgageInput.DownPayment = decimal.Parse(enteredtxtDownPayment);
+            baseMortgageInput.InterestRate = decimal.Parse(txtInterestRate.Text)/100;
             baseMortgageInput.LoanTerm = Int32.Parse(txtLoanTerm.Text);
             baseMortgageInput.StartDate = dtMortgageStartDate.Value;
 
@@ -203,10 +213,10 @@ namespace LoanAppWinFormsNET5UI
                 gbResults.Visible = true;
 
                 //Create Amortization Schedule
-                var amortizationSchedule = mortgageInput.CalculatedPeriodMortgageData();
+                var amortizationSchedule = _mortgagePaymentScheduleService.CalculatedExtraPaymentPeriodMortgageData(mortgageInput);
 
                 //Create Base Amortization Schedule
-                var baseAmortizationSchedule1 = baseMortgageInput.CalculatedPeriodMortgageData();
+                var baseAmortizationSchedule1 = _mortgagePaymentScheduleService.CalculatedPeriodMortgageData(baseMortgageInput);
                 basicAmmortizationSchedule = baseAmortizationSchedule1;
 
                 //Map schedule to dgv in results
@@ -292,8 +302,7 @@ namespace LoanAppWinFormsNET5UI
                 dgvAmortizationSchedule.ScrollBars = ScrollBars.Vertical;
 
                 //Calculate Summary Values
-                var summaryMortgageInfo = new MortgageExecutiveSummary();
-                summaryMortgageInfo.CalculateMortgageExecutiveSummary(amortizationSchedule, mortgageInput);
+                var summaryMortgageInfo = _mortgageExecutiveSummaryService.CalculateMortgageExecutiveSummary(amortizationSchedule, mortgageInput);
                 execSummary = summaryMortgageInfo;
 
                 //Map values to correct labels
@@ -355,19 +364,31 @@ namespace LoanAppWinFormsNET5UI
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+
+            extraPaymentsList = new BindingList<ExtraPayments>();
+            mortgageInput = new MortgageInputExtraPayments();
+            baseMortgageInput = new MortgageInput();
+            amortizationScheduleBindingList = new BindingList<MonthlyCalculatedValuesExtraPayments>();
+            execSummary = new MortgageExecutiveSummary();
+            basicAmmortizationSchedule = new List<MonthlyCalculatedValues>();
+
             txtExtraPaymentAmount.Clear();
+            enteredtxtExtraPaymentAmount = null;
             txtNumberofExtraPayments.Clear();
             txtPaymentInterval.Clear();
-            dgvExtraPaymentsTable.DataSource = null;
             dgvExtraPaymentsTable.ClearSelection();
+            dgvExtraPaymentsTable.DataSource = null;
 
+            enteredtxtDownPayment = null;
+            enteredTxtTotalAmount = null;
             txtTotalLoanAmount.Clear();
             txtDownPayment.Clear();
             txtInterestRate.Clear();
             txtLoanTerm.Clear();
             extraPaymentsList.Clear();
-            dgvAmortizationSchedule.DataSource = null;
             dgvAmortizationSchedule.ClearSelection();
+            dgvAmortizationSchedule.DataSource = null;
+
 
             lblLoanAmount.Hide();
             lblTotalTerm.Hide();
@@ -459,6 +480,52 @@ namespace LoanAppWinFormsNET5UI
         private void btnCreateChart_Click(object sender, EventArgs e)
         {
             //Create chart here
+        }
+
+        //TextBox Formatting
+        private void txtTotalLoanAmount_Leave(object sender, EventArgs e)
+        {
+            decimal value;
+            if(decimal.TryParse(txtTotalLoanAmount.Text, out value))
+            {
+                enteredTxtTotalAmount = txtTotalLoanAmount.Text;
+                txtTotalLoanAmount.Text = String.Format(CultureInfo.CurrentCulture, "{0:C2}", value);
+            }
+            else
+            {
+                enteredTxtTotalAmount = null;
+                txtTotalLoanAmount.Text = String.Empty;
+            }
+        }
+
+        private void txtDownPayment_Leave(object sender, EventArgs e)
+        {
+            decimal value;
+            if (decimal.TryParse(txtDownPayment.Text, out value))
+            {
+                enteredtxtDownPayment = txtDownPayment.Text;
+                txtDownPayment.Text = String.Format(CultureInfo.CurrentCulture, "{0:C2}", value);
+            }
+            else
+            {
+                enteredtxtDownPayment = null;
+                txtDownPayment.Text = String.Empty;
+            }
+        }
+
+        private void txtExtraPaymentAmount_Leave(object sender, EventArgs e)
+        {
+            decimal value;
+            if (decimal.TryParse(txtExtraPaymentAmount.Text, out value))
+            {
+                enteredtxtExtraPaymentAmount = txtExtraPaymentAmount.Text;
+                txtExtraPaymentAmount.Text = String.Format(CultureInfo.CurrentCulture, "{0:C2}", value);
+            }
+            else
+            {
+                enteredtxtExtraPaymentAmount = null;
+                txtExtraPaymentAmount.Text = String.Empty;
+            }
         }
     }
 }
