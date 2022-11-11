@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MortgageAppLibrary.Services.MortgageServices
 {
-    internal class BasicMortgageCalculationService
+    public class BasicMortgageCalculationService
     {
         public decimal CalculateRemainingLoanAmount(decimal DownPayment, decimal TotalLoanAmt)
         {
