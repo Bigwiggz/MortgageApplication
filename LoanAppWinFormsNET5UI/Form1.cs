@@ -34,9 +34,10 @@ namespace LoanAppWinFormsNET5UI
         private MortgageExecutiveSummaryService _mortgageExecutiveSummaryService=new MortgageExecutiveSummaryService();
         private MortgagePaymentScheduleService _mortgagePaymentScheduleService = new MortgagePaymentScheduleService();
 
-        private string enteredTxtTotalAmount;
-        private string enteredtxtDownPayment;
-        private string enteredtxtExtraPaymentAmount;
+        private decimal? enteredTxtTotalAmount;
+        private decimal? enteredtxtDownPayment;
+        private decimal? enteredtxtExtraPaymentAmount;
+        private decimal? enteredTxtInterestRate;
 
         //Add Event Class
         public event EventHandler btnAddExtraPaymentClicked;
@@ -83,7 +84,7 @@ namespace LoanAppWinFormsNET5UI
             ExtraPayments extraPayment = new ExtraPayments();
 
             //Add value to extra payment
-            extraPayment.ExtraPaymentAmount = decimal.Parse(enteredtxtExtraPaymentAmount);
+            extraPayment.ExtraPaymentAmount = enteredtxtExtraPaymentAmount.Value;
             extraPayment.NumberofPayments = Int32.Parse(txtNumberofExtraPayments.Text);
             extraPayment.PaymentInterval = Int32.Parse(txtPaymentInterval.Text);
             extraPayment.StartDate = dtFirstExtraPayment.Value;
@@ -189,17 +190,17 @@ namespace LoanAppWinFormsNET5UI
 
 
             //Add the Mortgage Value Information
-            mortgageInput.TotalLoanAmount = decimal.Parse(enteredTxtTotalAmount);
-            mortgageInput.DownPayment = decimal.Parse(enteredtxtDownPayment);
-            mortgageInput.InterestRate = decimal.Parse(txtInterestRate.Text)/100;
+            mortgageInput.TotalLoanAmount = enteredTxtTotalAmount.Value;
+            mortgageInput.DownPayment = enteredtxtDownPayment.Value;
+            mortgageInput.InterestRate = enteredTxtInterestRate.Value;
             mortgageInput.LoanTerm = Int32.Parse(txtLoanTerm.Text);
             mortgageInput.StartDate = dtMortgageStartDate.Value;
             mortgageInput.ExtraPayments = extraPaymentsList.ToList();
 
             //Add base mortgageInput
-            baseMortgageInput.TotalLoanAmount = decimal.Parse(enteredTxtTotalAmount);
-            baseMortgageInput.DownPayment = decimal.Parse(enteredtxtDownPayment);
-            baseMortgageInput.InterestRate = decimal.Parse(txtInterestRate.Text)/100;
+            baseMortgageInput.TotalLoanAmount = enteredTxtTotalAmount.Value;
+            baseMortgageInput.DownPayment = enteredtxtDownPayment.Value;
+            baseMortgageInput.InterestRate = enteredTxtInterestRate.Value;
             baseMortgageInput.LoanTerm = Int32.Parse(txtLoanTerm.Text);
             baseMortgageInput.StartDate = dtMortgageStartDate.Value;
 
@@ -488,7 +489,7 @@ namespace LoanAppWinFormsNET5UI
             decimal value;
             if(decimal.TryParse(txtTotalLoanAmount.Text, out value))
             {
-                enteredTxtTotalAmount = txtTotalLoanAmount.Text;
+                enteredTxtTotalAmount = value;
                 txtTotalLoanAmount.Text = String.Format(CultureInfo.CurrentCulture, "{0:C2}", value);
             }
             else
@@ -503,7 +504,7 @@ namespace LoanAppWinFormsNET5UI
             decimal value;
             if (decimal.TryParse(txtDownPayment.Text, out value))
             {
-                enteredtxtDownPayment = txtDownPayment.Text;
+                enteredtxtDownPayment = value;
                 txtDownPayment.Text = String.Format(CultureInfo.CurrentCulture, "{0:C2}", value);
             }
             else
@@ -518,13 +519,28 @@ namespace LoanAppWinFormsNET5UI
             decimal value;
             if (decimal.TryParse(txtExtraPaymentAmount.Text, out value))
             {
-                enteredtxtExtraPaymentAmount = txtExtraPaymentAmount.Text;
+                enteredtxtExtraPaymentAmount = value;
                 txtExtraPaymentAmount.Text = String.Format(CultureInfo.CurrentCulture, "{0:C2}", value);
             }
             else
             {
                 enteredtxtExtraPaymentAmount = null;
                 txtExtraPaymentAmount.Text = String.Empty;
+            }
+        }
+
+        private void txtInterestRate_Leave(object sender, EventArgs e)
+        {
+            decimal value;
+            if (decimal.TryParse(txtInterestRate.Text, out value))
+            {
+                enteredTxtInterestRate = value/100;
+                txtInterestRate.Text = String.Format(CultureInfo.CurrentCulture, "{0:0%}", value);
+            }
+            else
+            {
+                enteredTxtInterestRate = null;
+                txtInterestRate.Text = String.Empty;
             }
         }
     }

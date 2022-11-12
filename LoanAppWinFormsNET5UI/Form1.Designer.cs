@@ -209,6 +209,7 @@ namespace LoanAppWinFormsNET5UI
             this.txtInterestRate.Name = "txtInterestRate";
             this.txtInterestRate.Size = new System.Drawing.Size(100, 23);
             this.txtInterestRate.TabIndex = 7;
+            this.txtInterestRate.Leave += new System.EventHandler(this.txtInterestRate_Leave);
             // 
             // labelInterestRate
             // 
