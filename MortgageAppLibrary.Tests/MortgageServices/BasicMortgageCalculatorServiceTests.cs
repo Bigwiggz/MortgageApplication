@@ -1,4 +1,5 @@
-﻿using MortgageAppLibrary.Services.MortgageServices;
+﻿using MortgageAppLibrary.Tests.Extensions;
+using MortgageAppLibrary.Services.MortgageServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +10,16 @@ namespace MortgageAppLibrary.Tests.MortgageServices;
 
 public class BasicMortgageCalculatorServiceTests
 {
-	BasicMortgageCalculationService _basicMortgageCalculationService;
+	private BasicMortgageCalculationService _basicMortgageCalculationService;
+	private TestExtensions _testExtensions;
+	private decimal _percentTolerance;
 
 	public BasicMortgageCalculatorServiceTests()
 	{
 		_basicMortgageCalculationService = new BasicMortgageCalculationService();
-	}
+        _testExtensions=new TestExtensions();
+		_percentTolerance = 0.0005M;
+    }
 
 	[Theory]
 	[InlineData(10,30,20)]
@@ -33,15 +38,47 @@ public class BasicMortgageCalculatorServiceTests
 	}
 
 	[Theory]
-	[InlineData(100000,.05,120,1060.66)]
+	[InlineData(100000,.05,10,1060.66)]
+	[InlineData(200000,.0694,30,1322)]
 	public void CalculateFixedMonthlyPayment_ShouldProvideFixedMonthlyPayment(decimal remainingLoanAmt, decimal interestRate, int loanTerm, decimal expected)
 	{
 		//Arrange
 
 		//Act
 		decimal actual = _basicMortgageCalculationService.CalculateFixedMonthlyPayment(remainingLoanAmt, interestRate, loanTerm);
+		var answer=_testExtensions.IsNumberWithinPercentage(expected, actual, _percentTolerance);
 
         //Assert
-        Assert.Equal(expected, actual);
+        Assert.True(answer);
     }
+
+	[Theory]
+	[InlineData(1322,30,200000,275920)]
+	public void CalculateTotalInterestPaid_ShouldCalculateTotalInterestCorrectly(decimal fixedMonthlyPayment, int loanTerm, decimal remainingLoanAmt, decimal expected)
+	{
+		//Arrange
+
+		//Act
+		decimal actual = _basicMortgageCalculationService.CalculateTotalInterestPaid(fixedMonthlyPayment, loanTerm, remainingLoanAmt);
+		var answer=_testExtensions.IsNumberWithinPercentage(expected,actual, _percentTolerance);
+
+		//Assert
+		Assert.True(answer);
+	}
+
+	[Theory]
+	[InlineData()]
+	public void CalculateRemainingLoanBalance_ShouldCalculateRemainingLoanBalanceCorrectly(decimal remainingLoanAmt, decimal interestRate, int loanTerm, decimal fixedMonthlyPayment, decimal expected)
+	{
+		//Arrange
+
+		//Act
+		decimal actual=_basicMortgageCalculationService.CalculateRemainingLoanBalance(remainingLoanAmt,interestRate,loanTerm,fixedMonthlyPayment);
+		var answer=_testExtensions.IsNumberWithinPercentage(expected,actual,_percentTolerance);	
+
+		//Assert
+		Assert.True(answer);
+	}
+
+
 }

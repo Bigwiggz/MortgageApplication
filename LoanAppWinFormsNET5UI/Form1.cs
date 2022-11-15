@@ -16,6 +16,9 @@ using System.IO;
 using MortgageAppLibrary.Services.TextFile;
 using MortgageAppLibrary.Services.MortgageServices;
 using System.Globalization;
+using MortgageAppLibrary.FileActions;
+using MortgageAppLibrary.Models.SavedFile;
+using OfficeOpenXml.Export.ToDataTable;
 
 namespace LoanAppWinFormsNET5UI
 {
@@ -541,6 +544,73 @@ namespace LoanAppWinFormsNET5UI
             {
                 enteredTxtInterestRate = null;
                 txtInterestRate.Text = String.Empty;
+            }
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog= new SaveFileDialog();
+            saveFileDialog.Filter = "Data|*.dat";
+            saveFileDialog.Title = "Save data file";
+            saveFileDialog.ShowDialog();
+
+            //If the file nam is not an empty string ipen it for saving.
+            if (saveFileDialog.FileName != "")
+            {
+                var excelByteArray = new byte[] { };
+                var textByteArray=new byte[] { };
+
+                if (amortizationScheduleBindingList.Count>0)
+                {
+                    var excelApp = new ExcelMortgageOutput();
+                    excelByteArray = excelApp.CreateExcelTestFile(basicAmmortizationSchedule, amortizationScheduleBindingList.ToList(), execSummary);
+
+                    var textApp = new TextMortgageOutput();
+                    textByteArray = textApp.CreateTextFile(amortizationScheduleBindingList.ToList());
+                }
+
+                
+                //Create Saved File
+                var savedFile = new SavedFile
+                {
+                    FileName = saveFileDialog.FileName,
+                    MortgageInput = baseMortgageInput,
+                    MortgageInputExtraPayments = mortgageInput,
+                    AmortizationScheduleBasic= basicAmmortizationSchedule,
+                    AmortizationScheduleExtraPayments= amortizationScheduleBindingList.ToList(),
+                    MortgageExecutiveSummary= execSummary,
+                    ExcelFileBytes= excelByteArray,
+                    TextFileBytes= textByteArray
+                };
+
+                //Binary file writer
+                var fileService = new FileServices();
+
+                using (FileStream fs = (System.IO.FileStream)saveFileDialog.OpenFile())
+                {
+                    var fileBytes = fileService.SaveDataFileToBinary(savedFile);
+
+                    fs.Position = 0;
+                    fs.Write(fileBytes, 0, fileBytes.Length);
+                }
+            }
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog= new OpenFileDialog();
+            openFileDialog.Filter= "Data|*.dat";
+            openFileDialog.ShowDialog();
+
+            if (openFileDialog.CheckFileExists == true )
+            {
+                var fileService = new FileServices();
+                using (FileStream fs = (System.IO.FileStream)openFileDialog.OpenFile())
+                {
+                    byte[] openedBytes=File.ReadAllBytes(openFileDialog.FileName);
+                    var openedFile=fileService.OpenDataFileFromBinary(openedBytes);
+                    var check = openedFile;
+                }
             }
         }
     }

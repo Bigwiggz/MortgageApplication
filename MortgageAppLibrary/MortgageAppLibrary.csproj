@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BinaryFormatter" Version="3.0.0" />
     <PackageReference Include="EPPlus" Version="5.4.2" />
     <PackageReference Include="FluentValidation" Version="9.3.0" />
   </ItemGroup>

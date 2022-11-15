@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MortgageAppLibrary.Services.MortgageServices
 {
-    internal class ExtraPaymentService
+    public class ExtraPaymentService
     {
         public bool ApplyPayment(DateTime paymentAmortizationDate, ExtraPayments extraPayment)
         {

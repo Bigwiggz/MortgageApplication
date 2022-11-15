@@ -89,15 +89,25 @@ namespace LoanAppWinFormsNET5UI
             this.btnCreateExcelFile = new System.Windows.Forms.Button();
             this.btnCreateTextFile = new System.Windows.Forms.Button();
             this.btnCreatePDF = new System.Windows.Forms.Button();
+            this.menuStripMain = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialogMain = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialogMain = new System.Windows.Forms.SaveFileDialog();
             this.gpbxMortgageInformation.SuspendLayout();
             this.gpbxExtraPayments.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExtraPaymentsTable)).BeginInit();
             this.gbResults.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAmortizationSchedule)).BeginInit();
+            this.menuStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpbxMortgageInformation
             // 
+            this.gpbxMortgageInformation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gpbxMortgageInformation.Controls.Add(this.lblMortgageStartDateValidation);
             this.gpbxMortgageInformation.Controls.Add(this.lblInterestRateValidation);
             this.gpbxMortgageInformation.Controls.Add(this.lblLoanTermValidation);
@@ -115,7 +125,7 @@ namespace LoanAppWinFormsNET5UI
             this.gpbxMortgageInformation.Controls.Add(this.txtTotalLoanAmount);
             this.gpbxMortgageInformation.Controls.Add(this.labelTotalLoanAmount);
             this.gpbxMortgageInformation.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gpbxMortgageInformation.Location = new System.Drawing.Point(12, 46);
+            this.gpbxMortgageInformation.Location = new System.Drawing.Point(5, 70);
             this.gpbxMortgageInformation.Name = "gpbxMortgageInformation";
             this.gpbxMortgageInformation.Size = new System.Drawing.Size(417, 341);
             this.gpbxMortgageInformation.TabIndex = 0;
@@ -272,6 +282,8 @@ namespace LoanAppWinFormsNET5UI
             // 
             // gpbxExtraPayments
             // 
+            this.gpbxExtraPayments.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gpbxExtraPayments.Controls.Add(this.lblExtraPaymentsStartDateValidation);
             this.gpbxExtraPayments.Controls.Add(this.lblPaymentIntervalValidation);
             this.gpbxExtraPayments.Controls.Add(this.lblNumberofPaymentsValidation);
@@ -286,7 +298,7 @@ namespace LoanAppWinFormsNET5UI
             this.gpbxExtraPayments.Controls.Add(this.labelNumberofExtraPayments);
             this.gpbxExtraPayments.Controls.Add(this.txtExtraPaymentAmount);
             this.gpbxExtraPayments.Controls.Add(this.labelExtraPaymentAmount);
-            this.gpbxExtraPayments.Location = new System.Drawing.Point(444, 46);
+            this.gpbxExtraPayments.Location = new System.Drawing.Point(437, 70);
             this.gpbxExtraPayments.Name = "gpbxExtraPayments";
             this.gpbxExtraPayments.Size = new System.Drawing.Size(652, 341);
             this.gpbxExtraPayments.TabIndex = 1;
@@ -423,6 +435,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // gbResults
             // 
+            this.gbResults.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbResults.Controls.Add(this.dgvAmortizationSchedule);
             this.gbResults.Controls.Add(this.lblConventionalLoanAmt);
             this.gbResults.Controls.Add(this.label27);
@@ -445,7 +460,7 @@ namespace LoanAppWinFormsNET5UI
             this.gbResults.Controls.Add(this.lblLoanAmount);
             this.gbResults.Controls.Add(this.label11);
             this.gbResults.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.gbResults.Location = new System.Drawing.Point(13, 394);
+            this.gbResults.Location = new System.Drawing.Point(6, 418);
             this.gbResults.Name = "gbResults";
             this.gbResults.Size = new System.Drawing.Size(1083, 297);
             this.gbResults.TabIndex = 2;
@@ -455,6 +470,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // dgvAmortizationSchedule
             // 
+            this.dgvAmortizationSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvAmortizationSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAmortizationSchedule.Location = new System.Drawing.Point(6, 98);
             this.dgvAmortizationSchedule.Name = "dgvAmortizationSchedule";
@@ -464,6 +482,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblConventionalLoanAmt
             // 
+            this.lblConventionalLoanAmt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblConventionalLoanAmt.AutoSize = true;
             this.lblConventionalLoanAmt.Location = new System.Drawing.Point(966, 60);
             this.lblConventionalLoanAmt.Name = "lblConventionalLoanAmt";
@@ -473,6 +494,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label27
             // 
+            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label27.Location = new System.Drawing.Point(848, 60);
@@ -483,6 +507,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblTotalPaid
             // 
+            this.lblTotalPaid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotalPaid.AutoSize = true;
             this.lblTotalPaid.Location = new System.Drawing.Point(966, 31);
             this.lblTotalPaid.Name = "lblTotalPaid";
@@ -492,6 +519,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label29
             // 
+            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label29.Location = new System.Drawing.Point(843, 31);
@@ -502,6 +532,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblInterestReduction
             // 
+            this.lblInterestReduction.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInterestReduction.AutoSize = true;
             this.lblInterestReduction.Location = new System.Drawing.Point(767, 60);
             this.lblInterestReduction.Name = "lblInterestReduction";
@@ -511,6 +544,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label19
             // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label19.Location = new System.Drawing.Point(649, 60);
@@ -521,6 +557,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblTotalInterestPaid
             // 
+            this.lblTotalInterestPaid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotalInterestPaid.AutoSize = true;
             this.lblTotalInterestPaid.Location = new System.Drawing.Point(767, 31);
             this.lblTotalInterestPaid.Name = "lblTotalInterestPaid";
@@ -530,6 +569,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label21
             // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label21.Location = new System.Drawing.Point(644, 31);
@@ -540,6 +582,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblEndDate
             // 
+            this.lblEndDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEndDate.AutoSize = true;
             this.lblEndDate.Location = new System.Drawing.Point(582, 60);
             this.lblEndDate.Name = "lblEndDate";
@@ -549,6 +594,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label23
             // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label23.Location = new System.Drawing.Point(522, 60);
@@ -559,6 +607,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblTotalExtraPayments
             // 
+            this.lblTotalExtraPayments.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotalExtraPayments.AutoSize = true;
             this.lblTotalExtraPayments.Location = new System.Drawing.Point(582, 31);
             this.lblTotalExtraPayments.Name = "lblTotalExtraPayments";
@@ -568,6 +619,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label25
             // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label25.Location = new System.Drawing.Point(443, 31);
@@ -578,6 +632,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblStartDate
             // 
+            this.lblStartDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStartDate.AutoSize = true;
             this.lblStartDate.Location = new System.Drawing.Point(358, 60);
             this.lblStartDate.Name = "lblStartDate";
@@ -587,6 +644,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label16
             // 
+            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label16.Location = new System.Drawing.Point(274, 60);
@@ -597,6 +657,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblInterestRate
             // 
+            this.lblInterestRate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInterestRate.AutoSize = true;
             this.lblInterestRate.Location = new System.Drawing.Point(358, 31);
             this.lblInterestRate.Name = "lblInterestRate";
@@ -606,6 +669,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label18
             // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label18.Location = new System.Drawing.Point(259, 31);
@@ -616,6 +682,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblTotalTerm
             // 
+            this.lblTotalTerm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotalTerm.AutoSize = true;
             this.lblTotalTerm.Location = new System.Drawing.Point(152, 60);
             this.lblTotalTerm.Name = "lblTotalTerm";
@@ -625,6 +694,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label13
             // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(68, 60);
@@ -635,6 +707,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // lblLoanAmount
             // 
+            this.lblLoanAmount.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLoanAmount.AutoSize = true;
             this.lblLoanAmount.Location = new System.Drawing.Point(152, 31);
             this.lblLoanAmount.Name = "lblLoanAmount";
@@ -644,6 +719,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(49, 31);
@@ -654,7 +732,8 @@ namespace LoanAppWinFormsNET5UI
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(987, 12);
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClear.Location = new System.Drawing.Point(980, 36);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(115, 39);
             this.btnClear.TabIndex = 13;
@@ -666,7 +745,7 @@ namespace LoanAppWinFormsNET5UI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(19, 12);
+            this.label1.Location = new System.Drawing.Point(12, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(438, 28);
             this.label1.TabIndex = 14;
@@ -674,8 +753,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // btnCreateExcelFile
             // 
+            this.btnCreateExcelFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreateExcelFile.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateExcelFile.Image")));
-            this.btnCreateExcelFile.Location = new System.Drawing.Point(861, 5);
+            this.btnCreateExcelFile.Location = new System.Drawing.Point(854, 29);
             this.btnCreateExcelFile.Name = "btnCreateExcelFile";
             this.btnCreateExcelFile.Size = new System.Drawing.Size(50, 50);
             this.btnCreateExcelFile.TabIndex = 15;
@@ -684,8 +764,9 @@ namespace LoanAppWinFormsNET5UI
             // 
             // btnCreateTextFile
             // 
+            this.btnCreateTextFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreateTextFile.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateTextFile.Image")));
-            this.btnCreateTextFile.Location = new System.Drawing.Point(917, 5);
+            this.btnCreateTextFile.Location = new System.Drawing.Point(910, 29);
             this.btnCreateTextFile.Name = "btnCreateTextFile";
             this.btnCreateTextFile.Size = new System.Drawing.Size(50, 50);
             this.btnCreateTextFile.TabIndex = 16;
@@ -694,12 +775,57 @@ namespace LoanAppWinFormsNET5UI
             // 
             // btnCreatePDF
             // 
+            this.btnCreatePDF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreatePDF.Image = ((System.Drawing.Image)(resources.GetObject("btnCreatePDF.Image")));
-            this.btnCreatePDF.Location = new System.Drawing.Point(805, 5);
+            this.btnCreatePDF.Location = new System.Drawing.Point(798, 29);
             this.btnCreatePDF.Name = "btnCreatePDF";
             this.btnCreatePDF.Size = new System.Drawing.Size(50, 50);
             this.btnCreatePDF.TabIndex = 17;
             this.btnCreatePDF.UseVisualStyleBackColor = true;
+            // 
+            // menuStripMain
+            // 
+            this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStripMain.Location = new System.Drawing.Point(0, 0);
+            this.menuStripMain.Name = "menuStripMain";
+            this.menuStripMain.Size = new System.Drawing.Size(1114, 24);
+            this.menuStripMain.TabIndex = 18;
+            this.menuStripMain.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem,
+            this.openToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "&Exit";
+            // 
+            // openFileDialogMain
+            // 
+            this.openFileDialogMain.FileName = "openFileDialog1";
             // 
             // mainForm
             // 
@@ -714,6 +840,8 @@ namespace LoanAppWinFormsNET5UI
             this.Controls.Add(this.gbResults);
             this.Controls.Add(this.gpbxExtraPayments);
             this.Controls.Add(this.gpbxMortgageInformation);
+            this.Controls.Add(this.menuStripMain);
+            this.MainMenuStrip = this.menuStripMain;
             this.Name = "mainForm";
             this.Text = "Mortgage Application";
             this.Load += new System.EventHandler(this.mainForm_Load);
@@ -725,6 +853,8 @@ namespace LoanAppWinFormsNET5UI
             this.gbResults.ResumeLayout(false);
             this.gbResults.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAmortizationSchedule)).EndInit();
+            this.menuStripMain.ResumeLayout(false);
+            this.menuStripMain.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -791,6 +921,13 @@ namespace LoanAppWinFormsNET5UI
         private System.Windows.Forms.Button btnCreateExcelFile;
         private System.Windows.Forms.Button btnCreateTextFile;
         private System.Windows.Forms.Button btnCreatePDF;
+        private System.Windows.Forms.MenuStrip menuStripMain;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialogMain;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogMain;
     }
 }
 
