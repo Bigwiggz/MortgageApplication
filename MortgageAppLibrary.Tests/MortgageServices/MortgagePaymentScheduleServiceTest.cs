@@ -1,4 +1,6 @@
-﻿using MortgageAppLibrary.Models;
+﻿using MortgageAppLibrary.Tests.Extensions;
+using MortgageAppLibrary.Models;
+using MortgageAppLibrary.Services.MortgageServices;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,10 +12,15 @@ namespace MortgageAppLibrary.Tests.MortgageServices;
 
 public class MortgagePaymentScheduleServiceTest
 {
+    private MortgagePaymentScheduleService _MortgagePaymentScheduleService;
+    private TestExtensions _testExtensions;
+    private decimal _percentTolerance;
 
-	public MortgagePaymentScheduleServiceTest()
+    public MortgagePaymentScheduleServiceTest()
 	{
-
+        _percentTolerance = 0.005M;
+        _testExtensions = new TestExtensions();
+        _MortgagePaymentScheduleService = new MortgagePaymentScheduleService();
 	}
 
     public class CalculatorTestData : IEnumerable<object[]>
@@ -44,11 +51,29 @@ public class MortgagePaymentScheduleServiceTest
 
     [Theory]
     [ClassData(typeof(CalculatorTestData))]
-	public void CalculatedPeriodMortgageData_ShouldCalculateMortgageAmortizationSchedule(MortgageInput mortgageInput, List<MonthlyCalculatedValues> expected)
+	public void CalculatedPeriodMortgageData_ShouldCalculateMortgageAmortizationSchedule(object[] insertedObject)
 	{
-		//Arrange
+        //Arrange
+        var mortgageInput=(MortgageInput)insertedObject[0];
+        List<MonthlyCalculatedValues> amortizationSchedule = (List<MonthlyCalculatedValues>)insertedObject[1];
 
-		//Act
+        //Act
+        var actual = _MortgagePaymentScheduleService.CalculatedPeriodMortgageData(mortgageInput);
+
+        foreach (var expectedValue in amortizationSchedule)
+        {
+            foreach (var actualValue in actual)
+            {
+                bool isInterestPaidWithinTolerance = _testExtensions.IsNumberWithinPercentage(expectedValue.InterestPaid, actualValue.InterestPaid, _percentTolerance);
+                bool isWithinTolerance=_testExtensions.IsNumberWithinPercentage(expectedValue.RemainingBalance,actualValue.RemainingBalance, _percentTolerance);
+
+                //TODO: Finish Test
+                if (isInterestPaidWithinTolerance == false || isWithinTolerance == false)
+                {
+
+                }
+            }
+        }
 
 		//Assert
 	}
