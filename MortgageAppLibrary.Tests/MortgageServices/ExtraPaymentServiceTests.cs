@@ -17,9 +17,14 @@ public class ExtraPaymentServiceTests
 		_extraPaymentService = new ExtraPaymentService();
 	}
 
+	public static readonly object[][] ApplyPaymentData =
+	{
+		new object[] {new DateTime(2023,11,1),new DateTime(2022,12,1),400M,1,20,true},
+		new object[] {new DateTime(2023,11,1), new DateTime(2022, 12, 1), 400M, 1, 20, true}
+    };
+
 	[Theory]
-	[InlineData(new DateTime(2022,11,1),new DateTime(2022,12,1),400M,1,20,true)]
-	[InlineData(new DateTime(2022,11,1), new DateTime(2022, 12, 1), 400M, 1, 20, true)]
+	[MemberData(nameof(ApplyPaymentData))]
 	public void ApplyPayment_ShouldApplyPayment(DateTime paymentAmortizationDate, DateTime startDate,decimal extraPaymentAmount, int paymentInterval, int numberOfPayments, bool expected)
 	{
 		//Arrange

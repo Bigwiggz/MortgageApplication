@@ -18,7 +18,7 @@ public class BasicMortgageCalculatorServiceTests
 	{
 		_basicMortgageCalculationService = new BasicMortgageCalculationService();
         _testExtensions=new TestExtensions();
-		_percentTolerance = 0.0005M;
+		_percentTolerance = 0.005M;
     }
 
 	[Theory]
@@ -38,8 +38,8 @@ public class BasicMortgageCalculatorServiceTests
 	}
 
 	[Theory]
-	[InlineData(100000,.05,10,1060.66)]
-	[InlineData(200000,.0694,30,1322)]
+	[InlineData(100000,0.05,10,1060.66)]
+	[InlineData(200000,0.0694,30,1322)]
 	public void CalculateFixedMonthlyPayment_ShouldProvideFixedMonthlyPayment(decimal remainingLoanAmt, decimal interestRate, int loanTerm, decimal expected)
 	{
 		//Arrange
@@ -66,19 +66,5 @@ public class BasicMortgageCalculatorServiceTests
 		Assert.True(answer);
 	}
 
-	[Theory]
-	[InlineData()]
-	public void CalculateRemainingLoanBalance_ShouldCalculateRemainingLoanBalanceCorrectly(decimal remainingLoanAmt, decimal interestRate, int loanTerm, decimal fixedMonthlyPayment, decimal expected)
-	{
-		//Arrange
-
-		//Act
-		decimal actual=_basicMortgageCalculationService.CalculateRemainingLoanBalance(remainingLoanAmt,interestRate,loanTerm,fixedMonthlyPayment);
-		var answer=_testExtensions.IsNumberWithinPercentage(expected,actual,_percentTolerance);	
-
-		//Assert
-		Assert.True(answer);
-	}
-
-
+	
 }
