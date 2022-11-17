@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/LoanApp/Output/textOutputFile.txt
+/LoanApp/Output/testingTextOutupt.txt
+/LoanApp/Output/excelOutputFile.xlsx
