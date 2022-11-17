@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Text.Json;
+
 namespace MortgageAppLibrary.Tests.MortgageServices;
 
 public class MortgagePaymentScheduleServiceTest
@@ -15,16 +17,23 @@ public class MortgagePaymentScheduleServiceTest
     private MortgagePaymentScheduleService _MortgagePaymentScheduleService;
     private TestExtensions _testExtensions;
     private decimal _percentTolerance;
+    private readonly List<MonthlyCalculatedValues> _monthlyCalculatedValues;
 
     public MortgagePaymentScheduleServiceTest()
 	{
         _percentTolerance = 0.005M;
         _testExtensions = new TestExtensions();
         _MortgagePaymentScheduleService = new MortgagePaymentScheduleService();
+        
+        string testFileNameAndPath = @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\LoanApp\Output\testingTextOutupt.txt";
+        var jsonText = File.ReadAllText(testFileNameAndPath);
+        _monthlyCalculatedValues = JsonSerializer.Deserialize<List<MonthlyCalculatedValues>>(jsonText);
 	}
 
     public class CalculatorTestData : IEnumerable<object[]>
     {
+        private readonly object _monthlyCalculatedValues;
+
         public IEnumerator<object[]> GetEnumerator()
         {
             yield return new object[]
@@ -38,11 +47,7 @@ public class MortgagePaymentScheduleServiceTest
                    LoanTerm=30,
                    TotalLoanAmount=210000M
                },
-               new List<MonthlyCalculatedValues>
-               {
-
-               }
-
+               _monthlyCalculatedValues
             };
         }
 
@@ -60,21 +65,24 @@ public class MortgagePaymentScheduleServiceTest
         //Act
         var actual = _MortgagePaymentScheduleService.CalculatedPeriodMortgageData(mortgageInput);
 
+        bool answerIsWithinRange=true;
+
         foreach (var expectedValue in amortizationSchedule)
         {
             foreach (var actualValue in actual)
             {
                 bool isInterestPaidWithinTolerance = _testExtensions.IsNumberWithinPercentage(expectedValue.InterestPaid, actualValue.InterestPaid, _percentTolerance);
-                bool isWithinTolerance=_testExtensions.IsNumberWithinPercentage(expectedValue.RemainingBalance,actualValue.RemainingBalance, _percentTolerance);
+                bool isRemainingBalanceWithinTolerance=_testExtensions.IsNumberWithinPercentage(expectedValue.RemainingBalance,actualValue.RemainingBalance, _percentTolerance);
+                bool isTotalInterestPaidWithinTolerance=_testExtensions.IsNumberWithinPercentage(expectedValue.TotalInterestPaid,actualValue.TotalInterestPaid,_percentTolerance);  
 
-                //TODO: Finish Test
-                if (isInterestPaidWithinTolerance == false || isWithinTolerance == false)
+                if (isInterestPaidWithinTolerance == false || isRemainingBalanceWithinTolerance == false || isTotalInterestPaidWithinTolerance==false)
                 {
-
+                    answerIsWithinRange= false;
                 }
             }
         }
 
 		//Assert
+        Assert.True(answerIsWithinRange);
 	}
 }

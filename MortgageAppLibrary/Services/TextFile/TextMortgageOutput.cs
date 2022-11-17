@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.Json;
 
 namespace MortgageAppLibrary.Services.TextFile
 {
@@ -32,7 +33,23 @@ namespace MortgageAppLibrary.Services.TextFile
                         writer.WriteLine($"Extra Payment Cumulative:{String.Format("{0:C2}", period.CumulativeExtraPayment)}");
                         writer.WriteLine($"------------------------------------------------");
                     }
+
                     writer.Flush();
+                    memStream.Seek(0, SeekOrigin.Begin);
+                    return memStream.ToArray();
+                }
+            }
+        }
+
+        public byte[] CreateStandardAmortizationSchedule(List<MonthlyCalculatedValues> standardAmortizationSchedule)
+        {
+            var jsonOptions=new JsonSerializerOptions { WriteIndented= true };  
+            using(var memStream = new MemoryStream()) 
+            { 
+                using (StreamWriter writer = new StreamWriter(memStream))
+                {
+                    var jsonText=JsonSerializer.Serialize(standardAmortizationSchedule);
+                    writer.WriteLine(jsonText);
                     memStream.Seek(0, SeekOrigin.Begin);
                     return memStream.ToArray();
                 }

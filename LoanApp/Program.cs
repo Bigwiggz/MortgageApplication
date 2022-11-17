@@ -153,7 +153,29 @@ namespace LoanApp
             string textFileNameAndPath = @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\LoanApp\Output\textOutputFile.txt";
             File.WriteAllBytes(textFileNameAndPath, textByteArray);
 
+            //Testing information
 
+            var testInfo = new MortgageInput
+            {
+                DownPayment = 10000M,
+                InterestRate = 0.05M,
+                LoanDescription = "",
+                StartDate = new DateTime(2020, 1, 1),
+                LoanTerm = 30,
+                TotalLoanAmount = 210000M
+            };
+
+            var resultTraditionalMortgageInputValidation = validateMortgageInput.Validate(testInfo);
+
+            if (resultTraditionalMortgageInputValidation.IsValid == false)
+            {
+                throw new NotImplementedException();
+            }
+
+            var testingAmortizationSchedule = mortgageAmortizationScheduleService.CalculatedPeriodMortgageData(testInfo);
+            var testingTextByteArray = textPrint.CreateStandardAmortizationSchedule(testingAmortizationSchedule);
+            string testFileNameAndPath= @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\LoanApp\Output\testingTextOutupt.txt";
+            File.WriteAllBytes(testFileNameAndPath, testingTextByteArray);
         }
     }
 }
