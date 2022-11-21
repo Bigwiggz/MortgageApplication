@@ -173,9 +173,9 @@ namespace LoanApp
             }
 
             var testingAmortizationSchedule = mortgageAmortizationScheduleService.CalculatedPeriodMortgageData(testInfo);
-            var testingTextByteArray = textPrint.CreateStandardAmortizationSchedule(testingAmortizationSchedule);
-            string testFileNameAndPath= @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\LoanApp\Output\testingTextOutupt.txt";
-            File.WriteAllBytes(testFileNameAndPath, testingTextByteArray);
+            string testFileNameAndPath = @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\LoanApp\Output\testingTextOutupt.json";
+            textPrint.CreateStandardAmortizationSchedule(testingAmortizationSchedule, testFileNameAndPath);
+            
         }
     }
 }
