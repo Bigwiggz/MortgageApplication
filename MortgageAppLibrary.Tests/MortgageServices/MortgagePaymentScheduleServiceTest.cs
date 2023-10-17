@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Text.Json;
+using MortgageAppLibrary.Tests.Models;
 
 namespace MortgageAppLibrary.Tests.MortgageServices;
 
@@ -52,17 +53,17 @@ public class MortgagePaymentScheduleServiceTest
     }
 
     [Theory]
-    [JsonFileData("")]
-    [ClassData(typeof(CalculatorTestData))]
-	public void CalculatedPeriodMortgageData_ShouldCalculateMortgageAmortizationSchedule(object[] insertedObject)
+    [JsonFileData(@"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\MortgageAppLibrary.Tests\TestInputs\MortgageTestInput.json", "TestObjectsList")]
+	public void CalculatedPeriodMortgageData_ShouldCalculateMortgageAmortizationSchedule(object mortgageInput)
 	{
         //Arrange
-        var mortgageInput=(MortgageInput)insertedObject[0];
-        List<MonthlyCalculatedValues> amortizationSchedule = (List<MonthlyCalculatedValues>)insertedObject[1];
+        var mortgageInputValue = (MortgageInputTestModel)mortgageInput;
+        var mortgageInputInformation = mortgageInputValue.MortgageInput;
+        var amortizationSchedule = mortgageInputValue.MonthlyCalculatedValuesList;
 
         //Act
-        var actual = _MortgagePaymentScheduleService.CalculatedPeriodMortgageData(mortgageInput);
-        var expected = (List<MonthlyCalculatedValues>)insertedObject[1];
+        var actual = _MortgagePaymentScheduleService.CalculatedPeriodMortgageData(mortgageInputInformation);
+        var expected = amortizationSchedule;
 
         bool answerIsWithinRange=true;
         /*

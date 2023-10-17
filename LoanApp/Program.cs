@@ -6,6 +6,7 @@ using MortgageAppLibrary.Services.Excel;
 using MortgageAppLibrary.Services.TextFile;
 using MortgageAppLibrary.Validators;
 using MortgageAppLibrary.Services.MortgageServices;
+using MortgageAppLibrary.Tests.Models;
 
 namespace LoanApp
 {
@@ -173,9 +174,26 @@ namespace LoanApp
             }
 
             var testingAmortizationSchedule = mortgageAmortizationScheduleService.CalculatedPeriodMortgageData(testInfo);
-            string testFileNameAndPath = @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\LoanApp\Output\testingTextOutupt.json";
-            textPrint.CreateStandardAmortizationSchedule(testingAmortizationSchedule, testFileNameAndPath);
             
+
+
+            List<MortgageInputTestModel> mortgageInputTestModels = new();
+            MortgageInputTestModel mortgageInputTest = new MortgageInputTestModel
+            {
+                MortgageInput = testInfo,
+                MonthlyCalculatedValuesList = testingAmortizationSchedule.ToArray()
+            };
+
+            mortgageInputTestModels.Add(mortgageInputTest);
+
+            var testJSONObject = new TestJSONObject<MortgageInputTestModel>
+            {
+                TestObjectsList=mortgageInputTestModels.ToArray()
+            };
+
+            string testFileNameAndPath = @"C:\Users\Brian Wiggins\source\repos\LoanAppConsoleUI\MortgageAppLibrary.Tests\TestInputs\MortgageTestInput.json";
+            textPrint.CreateStandardAmortizationSchedule(testJSONObject, testFileNameAndPath);
+
         }
     }
 }

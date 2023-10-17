@@ -41,10 +41,10 @@ namespace MortgageAppLibrary.Services.TextFile
             }
         }
 
-        public void CreateStandardAmortizationSchedule(List<MonthlyCalculatedValues> standardAmortizationSchedule, string filePathName)
+        public void CreateStandardAmortizationSchedule(object jsonObject, string filePathName)
         {
             var jsonOptions = new JsonSerializerOptions { WriteIndented = true };
-            var jsonText = JsonSerializer.Serialize(standardAmortizationSchedule, jsonOptions);
+            var jsonText = JsonSerializer.Serialize(jsonObject, jsonOptions);
             File.WriteAllText(filePathName, jsonText);
         }
     }
